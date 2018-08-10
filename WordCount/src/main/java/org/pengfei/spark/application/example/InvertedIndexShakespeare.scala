@@ -67,6 +67,10 @@ object InvertedIndexShakespeare {
 
   }
 
+  /*
+  * This function takes a list of files and a spark session, count all words in all files
+  * return a dataframe
+  * */
   def buildFullWordCountDataFrame(fileList:List[File],spark:SparkSession):DataFrame ={
     import spark.implicits._
     val sc = spark.sparkContext
@@ -92,7 +96,10 @@ object InvertedIndexShakespeare {
     println("Data frame row :"+ fullDf.count())*/
     return fullDf
   }
-
+/*
+* This function take a file path, spark session, a file name.
+* it counts all words in this file and return a data frame
+* */
   def wordCount(filePath:String,spark:SparkSession,fileName:String):DataFrame= {
     import spark.implicits._
     val sc = spark.sparkContext
@@ -103,6 +110,8 @@ object InvertedIndexShakespeare {
     return wordDF
   }
 
+  /*
+  * This function take a dir path, return a list of files in this dir*/
   def getFileList(fileDir:String):List[File]={
     val dir = new File(fileDir)
     if(dir.exists() && dir.isDirectory){
@@ -112,9 +121,7 @@ object InvertedIndexShakespeare {
     else null
   }
 
-  def row(line : List[String], fileName : String):Row = {
-    Row(line(0),line(1).toInt,fileName)
-  }
+
 
 
 }
