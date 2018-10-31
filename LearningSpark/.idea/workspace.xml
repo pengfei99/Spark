@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala" line="519" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -12,14 +15,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Lesson4_1_Spark_SQL_Intro.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
+      <file leaf-file-name="Lesson12_Predicting_Forest.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="1296">
+              <caret line="84" column="3" lean-forward="false" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
               <folding>
-                <element signature="e#39#78#0" expanded="true" />
+                <element signature="e#74#113#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson13_Anomaly_Detection.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+              <folding>
+                <element signature="e#48#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson5_5_3_1_Spark_ML.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1404">
+              <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson5_5_3_3_Spark_ML_Exo1.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <element signature="e#38#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson5_5_2_1_MLlib_API_Data_Types.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1728">
+              <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="23" />
+              <folding>
+                <element signature="e#38#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pivot.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+              <folding>
+                <element signature="e#52#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson1_RDD.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2484">
+              <caret line="140" column="70" lean-forward="false" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1296">
+              <caret line="72" column="29" lean-forward="false" selection-start-line="71" selection-start-column="3" selection-end-line="72" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -27,55 +108,21 @@
       <file leaf-file-name="Lesson4_5_Spark_DataSet.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1440">
-              <caret line="109" column="59" lean-forward="false" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-              <folding>
-                <element signature="e#39#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lesson4_6_Spark_SQL_Built_In_Functions.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="48" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="48" />
-              <folding>
-                <element signature="e#39#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lesson4_Exc01_yelp.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="36" column="63" lean-forward="true" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-              <folding>
-                <element signature="e#39#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lesson5_1_Spark_ML_Intro.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="301" column="42" lean-forward="true" selection-start-line="301" selection-start-column="42" selection-end-line="301" selection-end-column="42" />
+            <state relative-caret-position="10782">
+              <caret line="608" column="52" lean-forward="false" selection-start-line="608" selection-start-column="49" selection-end-line="608" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lesson5_2_1_1_Regression_Algo.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.scala">
+      <file leaf-file-name="Lesson10_1_record_deduplication.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1188">
+              <caret line="70" column="43" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="48" />
+              <folding>
+                <element signature="e#52#91#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +133,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -99,7 +147,29 @@
       <find>page</find>
       <find>write</find>
       <find>explode</find>
+      <find>null</find>
+      <find>udf</find>
+      <find>twi</find>
+      <find>twitter</find>
+      <find>time</find>
+      <find>cache</find>
+      <find>String</find>
+      <find>foreachRdd</find>
+      <find>cube</find>
+      <find>stats</find>
+      <find>update</find>
+      <find>schema</find>
+      <find>match</find>
+      <find>agg</find>
+      <find>avg</find>
+      <find>area</find>
+      <find>als</find>
+      <find>ml</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL</dir>
+      <dir>$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML</dir>
+    </dirStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -125,12 +195,37 @@
         <option value="$PROJECT_DIR$/src/main/resources/hive-site.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataFrame.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/GeometricMean.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/CustomArthMean.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_MLlib_API.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_Spark_ML.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_Spark_Structure_Streaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" />
       </list>
     </option>
   </component>
@@ -160,6 +255,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,41 +291,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pengfei" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson3_Spark_Application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson4_Spark_SQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson5_Spark_ML" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,15 +318,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson4_Exc01_yelp">
-    <configuration name="Lesson2_Spark_Jobs" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Lesson13_Anomaly_Detection">
+    <configuration name="Lesson10_1_record_deduplication" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson2_Spark_Jobs_And_Shared_Var.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson10_Spark_Application_ETL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson2_Spark_Jobs_And_Shared_Var.Lesson2_Spark_Jobs" />
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson10_Spark_Application_ETL.Lesson10_1_record_deduplication" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -270,14 +338,14 @@
       <module name="LearningSpark" />
       <envs />
     </configuration>
-    <configuration name="Lesson4_1_Spark_SQL_Intro" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Lesson11_Recommendation" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson4_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson11_Spark_Application_Product_Recommendation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson4_Spark_SQL.Lesson4_1_Spark_SQL_Intro" />
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson11_Spark_Application_Product_Recommendation.Lesson11_Recommendation" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -289,14 +357,14 @@
       <module name="LearningSpark" />
       <envs />
     </configuration>
-    <configuration name="Lesson4_5_Spark_DataFrame" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Lesson12_Predicting_Forest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson4_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson12_Predicting_Forest_Cover_With_Decision_Trees.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson4_Spark_SQL.Lesson4_5_Spark_DataSet" />
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson12_Predicting_Forest_Cover_With_Decision_Trees.Lesson12_Predicting_Forest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -308,14 +376,14 @@
       <module name="LearningSpark" />
       <envs />
     </configuration>
-    <configuration name="Lesson4_6_Spark_SQL_Built_In_Functions" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Lesson13_Anomaly_Detection" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson4_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson13_Anomaly_Detection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson4_Spark_SQL.Lesson4_6_Spark_SQL_Built_In_Functions" />
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson13_Anomaly_Detection.Lesson13_Anomaly_Detection" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -327,24 +395,11 @@
       <module name="LearningSpark" />
       <envs />
     </configuration>
-    <configuration name="Lesson4_Exc01_yelp" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson4_Spark_SQL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson4_Spark_SQL.Lesson4_Exc01_yelp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    <configuration name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
       <module name="LearningSpark" />
-      <envs />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -428,19 +483,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Lesson2_Spark_Jobs" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Lesson4_1_Spark_SQL_Intro" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Lesson4_5_Spark_DataFrame" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Lesson4_6_Spark_SQL_Built_In_Functions" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Lesson4_Exc01_yelp" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Lesson10_1_record_deduplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Lesson11_Recommendation" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Lesson12_Predicting_Forest" />
+      <item index="3" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Lesson13_Anomaly_Detection" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Lesson4_Exc01_yelp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Lesson4_6_Spark_SQL_Built_In_Functions" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Lesson4_5_Spark_DataFrame" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Lesson4_1_Spark_SQL_Intro" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Lesson2_Spark_Jobs" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Lesson13_Anomaly_Detection" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Lesson12_Predicting_Forest" />
+        <item index="2" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Lesson11_Recommendation" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Lesson10_1_record_deduplication" />
       </list>
     </recent_temporary>
   </component>
@@ -473,42 +528,70 @@
       <workItem from="1535526121367" duration="39806000" />
       <workItem from="1535957951379" duration="16622000" />
       <workItem from="1536043606726" duration="16648000" />
+      <workItem from="1536129446421" duration="6844000" />
+      <workItem from="1536236700687" duration="8091000" />
+      <workItem from="1536304469962" duration="14901000" />
+      <workItem from="1536563425358" duration="15568000" />
+      <workItem from="1536649774309" duration="258000" />
+      <workItem from="1536650072294" duration="18795000" />
+      <workItem from="1536735331053" duration="8982000" />
+      <workItem from="1536821838844" duration="17110000" />
+      <workItem from="1536907626114" duration="14018000" />
+      <workItem from="1537167088901" duration="19356000" />
+      <workItem from="1537254598209" duration="14444000" />
+      <workItem from="1537339696417" duration="19072000" />
+      <workItem from="1537512980954" duration="9386000" />
+      <workItem from="1537777300671" duration="591000" />
+      <workItem from="1537858534599" duration="16215000" />
+      <workItem from="1537945368027" duration="118000" />
+      <workItem from="1538377810285" duration="3745000" />
+      <workItem from="1538464334067" duration="16149000" />
+      <workItem from="1538549659452" duration="4522000" />
+      <workItem from="1538982076185" duration="2032000" />
+      <workItem from="1539068797827" duration="14781000" />
+      <workItem from="1539674190365" duration="13426000" />
+      <workItem from="1539765376163" duration="44868000" />
+      <workItem from="1540191400173" duration="11535000" />
+      <workItem from="1540541023312" duration="8175000" />
+      <workItem from="1540799158490" duration="13370000" />
+      <workItem from="1540902976302" duration="11368000" />
+      <workItem from="1540972552973" duration="1266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228489000" />
+    <option name="totallyTimeSpent" value="557475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="19" width="1600" height="1082" extended-state="6" />
+    <frame x="0" y="28" width="945" height="940" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202545" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32589838" sideWeight="0.5037353" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28996283" sideWeight="0.5078829" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29056203" sideWeight="0.49626467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.49626467" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.4921171" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.49626467" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3530928" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27090302" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990025" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39003646" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3110285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -517,7 +600,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32589838" sideWeight="0.5037353" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28996283" sideWeight="0.5078829" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -526,18 +609,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990025" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39003646" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202545" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3110285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29056203" sideWeight="0.49626467" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.49626467" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3530928" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.4921171" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.49626467" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27090302" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -552,233 +635,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1962">
-          <caret line="109" column="59" lean-forward="false" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15606">
-          <caret line="867" column="0" lean-forward="true" selection-start-line="867" selection-start-column="0" selection-end-line="867" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1962">
-          <caret line="109" column="59" lean-forward="true" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10692">
-          <caret line="594" column="42" lean-forward="true" selection-start-line="594" selection-start-column="42" selection-end-line="594" selection-end-column="42" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7740">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="423" selection-start-column="12" selection-end-line="432" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14994">
-          <caret line="833" column="2" lean-forward="false" selection-start-line="833" selection-start-column="2" selection-end-line="833" selection-end-column="2" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7740">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="423" selection-start-column="12" selection-end-line="432" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12726">
-          <caret line="707" column="0" lean-forward="true" selection-start-line="707" selection-start-column="0" selection-end-line="707" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7740">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="423" selection-start-column="12" selection-end-line="432" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6948">
-          <caret line="386" column="27" lean-forward="true" selection-start-line="386" selection-start-column="27" selection-end-line="386" selection-end-column="27" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7740">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="423" selection-start-column="12" selection-end-line="432" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3996">
-          <caret line="222" column="86" lean-forward="false" selection-start-line="222" selection-start-column="86" selection-end-line="222" selection-end-column="86" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7722">
-          <caret line="430" column="31" lean-forward="false" selection-start-line="423" selection-start-column="12" selection-end-line="432" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="87" column="27" lean-forward="true" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8010">
-          <caret line="445" column="43" lean-forward="true" selection-start-line="445" selection-start-column="43" selection-end-line="445" selection-end-column="43" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7650">
-          <caret line="425" column="76" lean-forward="false" selection-start-line="425" selection-start-column="72" selection-end-line="425" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4140">
-          <caret line="230" column="19" lean-forward="true" selection-start-line="230" selection-start-column="19" selection-end-line="230" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="6" lean-forward="true" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDDWithNumTypes.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6300">
@@ -863,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7614">
-          <caret line="425" column="76" lean-forward="false" selection-start-line="425" selection-start-column="72" selection-end-line="425" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -884,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="83" lean-forward="false" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hive-site.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.jar!/org/apache/spark/sql/Dataset.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -899,23 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/GeometricMean.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,55 +760,247 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="848">
           <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="48" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="48" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="109" column="59" lean-forward="false" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-          <folding>
-            <element signature="e#39#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="36" column="63" lean-forward="true" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="536">
+          <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="83" lean-forward="false" selection-start-line="3" selection-start-column="83" selection-end-line="3" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/package.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="74" column="1" lean-forward="false" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_3_dimensionality_reduction_Algo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="178" column="4" lean-forward="true" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="301" column="42" lean-forward="true" selection-start-line="301" selection-start-column="42" selection-end-line="301" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="570">
+          <caret line="478" column="53" lean-forward="false" selection-start-line="478" selection-start-column="53" selection-end-line="478" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="611" column="50" lean-forward="false" selection-start-line="611" selection-start-column="50" selection-end-line="611" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5184">
+          <caret line="293" column="58" lean-forward="false" selection-start-line="293" selection-start-column="52" selection-end-line="293" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7002">
+          <caret line="390" column="8" lean-forward="false" selection-start-line="390" selection-start-column="7" selection-end-line="390" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="17" column="104" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="72" lean-forward="false" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="140" column="70" lean-forward="false" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="72" column="29" lean-forward="false" selection-start-line="71" selection-start-column="3" selection-end-line="72" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10782">
+          <caret line="608" column="52" lean-forward="false" selection-start-line="608" selection-start-column="49" selection-end-line="608" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="68" column="52" lean-forward="false" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot/scala.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+          <folding>
+            <element signature="e#52#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="70" column="43" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="48" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="395" column="64" lean-forward="false" selection-start-line="395" selection-start-column="64" selection-end-line="395" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2916">
+          <caret line="119" column="16" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="78" column="20" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="23" />
+          <folding>
+            <element signature="e#38#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding>
+            <element signature="e#38#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="84" column="3" lean-forward="false" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+          <folding>
+            <element signature="e#74#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+          <folding>
+            <element signature="e#48#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

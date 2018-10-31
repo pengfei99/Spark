@@ -50,7 +50,7 @@ object Lesson4_6_Spark_SQL_Built_In_Functions {
      // DSMathOperations(spark)
     /**************************************4.5.6.5 String functions **********************************/
 
-     // DSStringOperations(spark)
+      DSStringOperations(spark)
     /**************************************4.5.6.6 Window functions **********************************/
 
      // DSWindowOperations(spark)
@@ -60,7 +60,7 @@ object Lesson4_6_Spark_SQL_Built_In_Functions {
      // DSMiscellaneousOperations(spark)
 
     /*************************************4.5.6.8 UDFs and UDAFs ***********************************************/
-    DSUDFOperations(spark)
+   // DSUDFOperations(spark)
   }
 
   /*******************************************************************************************************
@@ -587,6 +587,10 @@ val nums=List(NumTest(234.5,1,30),
     /*get levenshtein value between industry and sector*/
     nasdaqDf.select(levenshtein($"industry",$"sector")).show()
 
+    /******************************************SubString************************************************/
+    val subNasdaqDf=nasdaqDf.withColumn("Sub_ipoYear", substring($"ipoYear",0,2)).show()
+
+
   }
 
   /**********************************************************************************************************
@@ -835,13 +839,6 @@ val nums=List(NumTest(234.5,1,30),
 
 
 
-
-
-
-
-
-
-
     /* Spark SQL allows user-defined functions (UDFs) and user-defined aggregation functions (UDAFs). Both
      * UDFs and UDAFs perform custom computations on a dataset.
      * - UDF performs custom computation one row at a time and returns a value for each row.
@@ -864,7 +861,9 @@ val nums=List(NumTest(234.5,1,30),
     //taxDF.show()
     taxDF.withColumn("netSal",expr("getNetSal(sal,taxRate)")).show()
 
-    /****************************** 4.5.6.8.1 User define aggregation functions(UDAFs) *****************************/
+    /* It's also possible to use udf in filter*/
+
+    /****************************** 4.5.6.8.3 User define aggregation functions(UDAFs) *****************************/
 
      /* In order to write a UDAF, we need to extend class UserDefinedAggregateFunctions and overwrite follwoing methods
       * - initialize: On a given node, this method is called once for each group (after groupBy)

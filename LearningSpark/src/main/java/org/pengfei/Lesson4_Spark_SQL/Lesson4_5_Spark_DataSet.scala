@@ -21,6 +21,7 @@ object Lesson4_5_Spark_DataSet {
     val sc=spark.sparkContext
     import spark.implicits._
 
+
   /** ***********************************************************************************************
     * ***********************************4.5 Spark sql DataSet/DataFrame ********************************
     * **********************************************************************************************/
@@ -83,7 +84,7 @@ object Lesson4_5_Spark_DataSet {
     *
     * */
 
-    // DSTransformationOperation(spark)
+     //DSTransformationOperation(spark)
 
 
     /******************************4.5.4 Processing Data with dataset API (Action)**************************/
@@ -570,6 +571,7 @@ object Lesson4_5_Spark_DataSet {
     * rows where date=01/01/2015 and country=USA */
 
     val salesCubeDf=sales.cube($"date",$"product",$"country").sum("revenue")
+    println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Stat of cube%%%%%%%%%%%%%%%%%%%%%")
     salesCubeDf.show()
 
     /* If you want to find the total sales of all products in the USA, you can use the following filter query*/
@@ -629,6 +631,7 @@ object Lesson4_5_Spark_DataSet {
 
     val customerDF=List(Customer(11, "Jackson", 21, "M"),
       Customer(12, "Emma", 25, "F"),
+
       Customer(13, "Olivia", 31, "F"),
       Customer(4, "Jennifer", 45, "F"),
       Customer(5, "Robert", 41, "M"),

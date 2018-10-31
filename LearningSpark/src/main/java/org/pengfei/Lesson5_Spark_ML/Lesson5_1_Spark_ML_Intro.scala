@@ -300,5 +300,182 @@ def main(args:Array[String])={
   * - linear regression
   * - decision trees
   * - ensembles of trees(Random forest).*/
+
+  /* You can get the details of each regression algorithm in separate files Lesson5_2_1_1_Regression_Algo*/
+
+  /*****************************************5.2.1.2 Classification Algorithms *****************************************/
+
+  /* You can get the details of each classification algorithm in separate files Lesson5_2_1_2_Classification_Algo*/
+
+  /******************************************************************************************************************
+    * *****************************************5.2.2 Unsupervised ML Algorithms *****************************************
+    * **************************************************************************************************************/
+
+  /* An unsupervised machine learning algorithm is used when a dataset is unlabeled. It draws inferences from
+ * unlabeled datasets. Generally, the goal is to find hidden structure in unlabeled data. Unsupervised machine
+ * learning algorithms are generally used for
+ * - clustering
+ * - anomaly detection
+ * - dimensionality reduction.
+ * The list of commonly used unsupervised machine learning algorithms includes k-means, Principal
+ * Component Analysis, and Singular Value Decomposition (SVD).*/
+
+  /*****************************************5.2.2.1 Clustering Algorithms *****************************************/
+  /* You can get the details of each clustering algorithm in separate files Lesson5_2_2_1_Clustering_Algo*/
+
+  /*****************************************5.2.2.2 Anomaly detection Algorithms *************************************/
+  /* You can get the details of each anomaly detection algorithm in separate files Lesson5_2_2_2_Anomaly_Detection_Algo*/
+
+  /*****************************************5.2.2.3 Dimensionality reduction Algorithms *********************************/
+  /* You can get the details of each clustering algorithm in separate files Lesson5_2_2_3_Dimensionality_reduction_Algo*/
+
+  /******************************************************************************************************************
+    * *****************************************5.2.3 ML Algorithms Hyperparameter ***********************************
+    * **************************************************************************************************************/
+
+  /* Many machine learning algorithms also require a few input parameters that determine the training time and
+  * predictive effectiveness of a trained model. These parameters, which are not directly learnt, but provided
+  * as inputs to a learning algorithm, are known as hyperparameters. A good data scientiest can find the best
+  * hyperparameters to improve model accuracy.*/
+
+  /******************************************************************************************************************
+    * *****************************************5.3 ML Model Validation ***********************************
+    * **************************************************************************************************************/
+
+  /* After a model is trained, it is important to evaluate it on a test dataset. The predictive effectiveness or
+  * quality of a model can be evaluated using a few different metrics. Generally, the evaluation metric depends
+  * on the machine learning task. Different metrics are used for linear regression, classification, clustering,
+  * and recommendation.
+  *
+  * A simple model evaluation metric is accuracy. It is defined as the percentage of the labels correctly
+  * predicted by a model. For example, if a test dataset has 100 observations and a model correctly predicts the
+  * labels for 90 observations, its accuracy is 90%.
+  *
+  * However, accuracy can be a misleading metric. For example, consider a tumors database, where each
+  * row has data about either a malignant or a benign tumor. In the context of machine learning, a malignant
+  * tumor is considered a positive sample and a benign tumor is considered a negative sample. Suppose we
+  * train a model that predicts whether a tumor is malignant (positive) or non-cancerous benign (negative). Is it
+  * a good model if it has 90% accuracy?
+  *
+  * It depends on the test dataset. If the test dataset has 50% positive and 50% negative samples, our model
+  * is performing well. However, if the test dataset has only 1% positive and 99% negative samples, our model
+  * is worthless. We can generate a better model without using machine learning; a simple model that always
+  * classifies a sample as negative will have 99% accuracy. Thus, it has a better accuracy than our trained model,
+  * even though it incorrectly classifies all the positive samples.
+  *
+  * The two commonly used metrics for evaluating a classifier or classification model are:
+  * - Area under Curve(AUC)
+  * - F-measure.
+  * For regression model, we often use
+  * - Root Mean Squared Error (RMSE)
+  *
+  * You can get the details of these validation method in separate files Lesson5_3_Model_Validation*/
+
+  /******************************************************************************************************************
+    * *****************************************5.4 ML High-level Steps *********************************************
+    * **************************************************************************************************************/
+
+  /*
+  * The high-level steps generally depend on the type of a machine learning task and not so much on the
+  * machine learning algorithms. For a given task, the same steps can be used with different machine learning
+  * algorithms.
+  *
+  * Supervised machine learning task generally consists of the following high-level steps.
+  * -- 1. Split data into training, validation, and test sets.
+  * -- 2. Select the features for training a model.
+  * -- 3. Fit a model on the training dataset using a supervised machine learning algorithm.
+  * -- 4. Tune the hyperparameters using the validation dataset.
+  * -- 5. Evaluate the model on a test dataset.
+  * -- 6. Apply the model to new data.
+  *
+  * Unsupervised machine learning task generally consists of the following high-level steps.
+  * -- 1. Select the feature variables.
+  * -- 2. Fit a model using an unsupervised machine learning algorithm.
+  * -- 3. Evaluate the model using the right evaluation metrics.
+  * -- 4. Use the model.
+  * */
+
+  /******************************************************************************************************************
+    * *****************************************5.5 ML in spark *****************************************************
+    * **************************************************************************************************************/
+
+  /*
+  * Spark provides two machine learning libraries, MLlib and Spark ML (also known as the Pipelines API). These
+  * libraries enable high-performance machine learning on large datasets. Unlike machine learning libraries that
+  * can be used only with datasets that fit on a single machine, both MLlib and Spark ML are scalable. They make
+  * it possible to utilize a multi-node cluster for machine learning.
+  *
+  * In addition, since Spark allows an application to cache a dataset in memory, machine learning applications
+  * built with Spark ML or MLlib are fast.
+  *
+  * MLlib is the first machine learning library that shipped with Spark. It is more mature than Spark ML. Both
+  * libraries provide higher-level abstractions for machine learning than the core Spark API
+  * */
+
+  /******************************************5.5.1 MLlib overview **********************************************/
+
+  /* MLlib extends Spark for machine learning and statistical analysis. It provides a higher-level API than the
+  * Spark core API for machine learning and statistical analysis. It comes prepackaged with commonly used
+  * machine learning algorithms used for a variety of machine learning tasks. It also includes statistical utilities
+  * for different statistical analysis.
+  *
+  * MLlib integrates with other Spark libraries such as Spark Streaming and Spark SQL. It can be used with both batch
+  * and streaming data.
+  *
+  * Data preparation steps such as data cleansing and feature engineering becomes easier with the DataSet/Frame API
+  * provided by Spark SQL. Generally, the raw data cannot be used directly with machine learning algorithms.
+  * Features need to be extracted from the raw data.
+  *
+  * Statistical Utilities
+  * MLlib provides classes and functions for common statistical analysis. It supports summary statistics,
+  * correlations, stratified sampling, hypothesis testing, random data generation, and kernel density estimation.
+  *
+  *
+  * Machine Learning Algorithms
+  * MLlib can be used for common machine learning tasks such as regression, classification, clustering,
+  * anomaly detection, dimensionality reduction, and recommendation. The list of algorithms that come
+  * bundled with MLlib is ever growing. This section lists the algorithms shipped with MLlib at the time of 2016.
+  *
+  * - Regression and Classification
+  * -- • Linear regression
+  * -- • Logistic regression
+  * -- • Support Vector Machine
+  * -- • Naïve Bayes
+  * -- • Decision tree
+  * -- • Random forest
+  * -- • Gradient-boosted trees
+  * -- • Isotonic regression
+  *
+  * - Clustering
+  * -- • K-means
+  * -- • Streaming k-means
+  * -- • Gaussian mixture
+  * -- • Power iteration clustering (PIC)
+  * -- • Latent Dirichlet allocation (LDA)
+  *
+  * - Dimensionality Reduction
+  * -- • Principal component analysis (PCA)
+  * -- • Singular value decomposition (SVD)
+  *
+  * - Feature Extraction and Transformation
+  * -- • TF-IDF
+  * -- • Word2Vec
+  * -- • Standard Scaler
+  * -- • Normalizer
+  * -- • Chi-Squared feature selection
+  * -- • Elementwise product
+  *
+  * - Frequent pattern mining
+  * -- • FP-growth
+  * -- • Association rules
+  * -- • PrefixSpan
+  *
+  * - Recommendation
+  * -- • Collaborative filtering with Alternating Least Squares (ALS)
+  * */
+
+  /******************************************5.5.2 MLlib API **********************************************/
+
+  /******************************************5.5.3 ML API **********************************************/
 }
 }
