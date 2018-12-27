@@ -540,7 +540,8 @@ object Lesson4_5_Spark_DataSet {
     sales.describe("revenue").show()
 
     /*******************************************first/take**********************************************/
-    /* The first method returns the first row in the source DataFrame*/
+    /* The first method returns the first row in the source DataFrame. In agg(), you can also use first to get the first
+    * element of a column*/
     val firstRow=sales.first()
     /* The take method takes an integer N as an argument and returns the first N rows from the source DataFrame
      * as an array of Rows.*/

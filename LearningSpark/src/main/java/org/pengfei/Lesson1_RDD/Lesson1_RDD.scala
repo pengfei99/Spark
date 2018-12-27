@@ -33,7 +33,7 @@ object Lesson1_RDD {
       getOrCreate()
     // import sparkSession.implicits._ for all schema conversion magic.
 
-    // RddCreationOperation(spark)
+     RddCreationOperation(spark)
     // RddTransformationOperation(spark)
     // RddActionOperations(spark)
 
@@ -42,7 +42,7 @@ object Lesson1_RDD {
 
     //RddSaveOperation(spark)
     //RddCachingOperations(spark)
-    RddUdfOperations(spark)
+   // RddUdfOperations(spark)
 
 
 
@@ -148,6 +148,7 @@ object Lesson1_RDD {
   case class client_satisfait(manager_name:String,  client_name:String, client_gender:String, client_age:Int, response_time:Double, statisfaction_level:Double)
 val client_sat_lines=sc.textFile("/DATA/data_set/spark/basics/Lesson1_RDD/satisfait_client.data")
     val satisfait_client = client_sat_lines.map{ l=> {
+      // isEmpty is a string specific method for null value testing, because ==null does not work in scala
       if(l.isEmpty){println("This is an empty line")}
       else {
       val s= l.split(",")

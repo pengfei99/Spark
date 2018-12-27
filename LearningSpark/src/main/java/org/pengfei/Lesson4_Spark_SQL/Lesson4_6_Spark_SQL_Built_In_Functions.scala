@@ -50,10 +50,10 @@ object Lesson4_6_Spark_SQL_Built_In_Functions {
      // DSMathOperations(spark)
     /**************************************4.5.6.5 String functions **********************************/
 
-      DSStringOperations(spark)
+     // DSStringOperations(spark)
     /**************************************4.5.6.6 Window functions **********************************/
 
-     // DSWindowOperations(spark)
+      DSWindowOperations(spark)
 
     /**************************************4.5.6.7 Miscellaneous functions **********************************/
 
@@ -600,6 +600,7 @@ val nums=List(NumTest(234.5,1,30),
 
     import spark.implicits._
 
+    /* empDF is the normal data , empDF1 has the same deptno for all users*/
     val empDF = spark.createDataFrame(Seq(
       (7369, "SMITH", "CLERK", 7902, "17-Dec-80", 800, 20, 10),
       (7499, "ALLEN", "SALESMAN", 7698, "20-Feb-81", 1600, 300, 30),
@@ -696,26 +697,71 @@ val nums=List(NumTest(234.5,1,30),
   * so same frame. As a result, there is only one rank for rank salary. */
 
    /*********************************rank/denseRank/percentRank*****************************************/
-    val depNoWindow=Window.partitionBy($"deptno").orderBy($"sal".desc)
+   /* To be able to do rank, we need to create a window specification, In this example, we create two window specification
+   * depNoWindow is a window specification partitionBy deptatement number, jobWindow is partitionBy job types*/
+   val depNoWindow=Window.partitionBy($"deptno").orderBy($"sal".desc)
+
     val jobWindow=Window.partitionBy($"job").orderBy($"sal".desc)
-      //do a rank in depNoWindow
+    /* After creation of window specification, we can do rank in depNoWindow*/
     val rankTest=rank().over(depNoWindow)
     val denseRankTest=dense_rank().over(depNoWindow)
     val percentRankTest=percent_rank().over(depNoWindow)
-    empDF1.select($"*", rankTest as "rank",denseRankTest as "denseRank",percentRankTest as "percentRank").show()
+    empDF.select($"*", rankTest as "rank",denseRankTest as "denseRank",percentRankTest as "percentRank").show()
 
+    /* As we partitioned the data with column deptno, in the empDF example, we could see, rank do ranking for each dept
+
+    empDF result:
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+|empno| ename|      job| mgr| hiredate| sal|comm|deptno|rank|denseRank|percentRank|
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+| 7788| SCOTT|  ANALYST|7566|19-Apr-87|3000|   0|    20|   1|        1|        0.0|
+| 7566| JONES|  MANAGER|7839| 2-Apr-81|2975|   0|    20|   2|        2|        0.5|
+| 7876| ADAMS|    CLERK|7788|23-May-87|1100|   0|    20|   3|        3|        1.0|
+| 7839|  KING|PRESIDENT|   0|17-Nov-81|5000|   0|    10|   1|        1|        0.0|
+| 7782| CLARK|  MANAGER|7839| 9-Jun-81|2450|   0|    10|   2|        2|        0.5|
+| 7369| SMITH|    CLERK|7902|17-Dec-80| 800|  20|    10|   3|        3|        1.0|
+| 7698| BLAKE|  MANAGER|7839| 1-May-81|2850|   0|    30|   1|        1|        0.0|
+| 7499| ALLEN| SALESMAN|7698|20-Feb-81|1600| 300|    30|   2|        2|       0.25|
+| 7844|TURNER| SALESMAN|7698| 8-Sep-81|1500|   0|    30|   3|        3|        0.5|
+| 7521|  WARD| SALESMAN|7698|22-Feb-81|1250| 500|    30|   4|        4|       0.75|
+| 7654|MARTIN| SALESMAN|7698|28-Sep-81|1250|1400|    30|   4|        4|       0.75|
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+
+    empDF1 result: all users belong to one dept
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+|empno| ename|      job| mgr| hiredate| sal|comm|deptno|rank|denseRank|percentRank|
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+| 7839|  KING|PRESIDENT|   0|17-Nov-81|5000|   0|    10|   1|        1|        0.0|
+| 7788| SCOTT|  ANALYST|7566|19-Apr-87|3000|   0|    10|   2|        2|        0.1|
+| 7566| JONES|  MANAGER|7839| 2-Apr-81|2975|   0|    10|   3|        3|        0.2|
+| 7698| BLAKE|  MANAGER|7839| 1-May-81|2850|   0|    10|   4|        4|        0.3|
+| 7782| CLARK|  MANAGER|7839| 9-Jun-81|2450|   0|    10|   5|        5|        0.4|
+| 7499| ALLEN| SALESMAN|7698|20-Feb-81|1600| 300|    10|   6|        6|        0.5|
+| 7844|TURNER| SALESMAN|7698| 8-Sep-81|1500|   0|    10|   7|        7|        0.6|
+| 7521|  WARD| SALESMAN|7698|22-Feb-81|1250| 500|    10|   8|        8|        0.7|
+| 7654|MARTIN| SALESMAN|7698|28-Sep-81|1250|1400|    10|   8|        8|        0.7|
+| 7876| ADAMS|    CLERK|7788|23-May-87|1100|   0|    10|  10|        9|        0.9|
+| 7369| SMITH|    CLERK|7902|17-Dec-80| 800|  20|    10|  11|       10|        1.0|
++-----+------+---------+----+---------+----+----+------+----+---------+-----------+
+*/
+
+    /* repeat above process with Job window*/
     val rankTestJob=rank().over(jobWindow)
     val denseRankTestJob=dense_rank().over(jobWindow)
     val percentRankJob=percent_rank().over(jobWindow)
     empDF.select($"*", rankTestJob as "rank",denseRankTestJob as "denseRank",percentRankJob as "percentRank").show()
+
     /*************************************** ntile ***********************************/
-    //ntile/rowNumber on department Number(DF1 has the same dep no, so one partition) window
+    /* In the following ntile example, we choose to divide each partition into 6 tiles (DF1 has the same dep no,
+     * so one partition, DF has multiple dep no, which means multiple partition.).
+     * */
     val ntileTest=ntile(6).over(depNoWindow)
+    /* rowNumber on department Number window, it will stats with 1 for each partition*/
     val row_numberTest=row_number().over(depNoWindow)
-    empDF1.select($"*", ntileTest as "ntile", row_numberTest as "row_number").show()
+    empDF.select($"*", ntileTest as "ntile", row_numberTest as "row_number").show()
 
 
-    //ntile/rowNumber on job window(5 partition)
+    /* The ntile/rowNumber on job window(5 partition)*/
     val ntilJob=ntile(6).over(jobWindow)
     val rowNumberJob=row_number().over(jobWindow)
     empDF1.select($"*",ntilJob as "ntileJob",rowNumberJob as "rowNumberJob").show()

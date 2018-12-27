@@ -73,12 +73,13 @@ object Lesson10_1_record_deduplication {
 
     val filePath="/DATA/data_set/spark/basics/Lesson10_Spark_Application_ETL/hospital_data"
     val block1Name="/block_1.csv"
-
+/* One example line of the csv file : 39086,47614,1,?,1,?,1,1,1,1,1,TRUE, ? means nullValue, in the following spark
+* read, in option, we specify this. */
     val block1Df=spark.read.option("header","true").option("nullValue","?").option("inferSchema","true").csv(filePath+block1Name)
 
     /********************************10.1.3 understand Dataset*********************************************/
 
-    //UnderstandDFOperation(spark,block1Df)
+    // UnderstandDFOperation(spark,block1Df)
 
     /* With the above command, we know the schema, the size of the dataset, Now we need to understand each column
     * - The first two fields (id_1, id_2)are integer IDs that represent the patients that were matched in the record
@@ -135,7 +136,7 @@ object Lesson10_1_record_deduplication {
 * 2. After the transformation to longForm we want to see the count, mean for each field
 */
 
-   // PivotingDataFrameExample(block1Df)
+    PivotingDataFrameExample(block1Df)
 
     /**********************10.1.6 Selecting features ****************************************/
 /*
@@ -187,7 +188,7 @@ object Lesson10_1_record_deduplication {
  *  nonmatches at various thresholds.*/
 
     /********************** 10.1.7 Preparing models for production environments *************************************/
-    ProductionExample(block1Df)
+   // ProductionExample(block1Df)
   }
 
   def UnderstandDFOperation(spark:SparkSession,df:DataFrame):Unit={
@@ -225,7 +226,7 @@ object Lesson10_1_record_deduplication {
     // get the sechma of df which has type StructType(StructField(id_1,IntegerType,true), StructField*)
     val schema = df.schema
     //println(schema.toString())
-
+     summary.show(5)
     val longForm:Dataset[(String,String,Double)]= summary.flatMap(row=>{
       // row.getString(0) get the first element of the current row which is the metric name (e.g. count, mean)
       val metric=row.getString(0)
@@ -239,6 +240,9 @@ object Lesson10_1_record_deduplication {
 
     val longDF=longForm.toDF("metric","field","value")
     longDF.show()
+
+    /* We want to also reverse */
+
 
     /****************Now, we want to see the mean, count of each value*********/
     val wideDF=longDF.groupBy("field").pivot("metric",Seq("count","mean","stddev","min","max"))

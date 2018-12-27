@@ -17,7 +17,7 @@ def main(args:Array[String]):Unit={
     getOrCreate()
   // import sparkSession.implicits._ for all schema conversion magic.
 
- // PaireRDDTransformationOperation(spark)
+ //PaireRDDTransformationOperation(spark)
   PaireRDDActionOperation(spark)
 
 }
@@ -110,7 +110,9 @@ def main(args:Array[String]):Unit={
 
     /************************************** substractByKey ******************************************/
     /* The subtractByKey method takes an RDD of key-value pairs as input and returns an RDD of key-value pairs
-     * containing only those keys that exist in the source RDD, but not in the input RDD. */
+     * containing only those keys that exist in the source RDD, but not in the input RDD.
+     * A=(a,b,c) B=(b,c,d) A.subtractByKey(B)=(a)
+     * */
 
     val substractPair=pair1.subtractByKey(pair2)
     println(s" substractPair value is ${substractPair.collect().mkString(",")}")
@@ -121,16 +123,17 @@ def main(args:Array[String]):Unit={
   * RDD and the second element is a collection of all the values that have the same key. It is similar to the
   * groupBy method that we saw earlier. The difference is that groupBy is a higher-order method that takes as
   * input a function that returns a key for each element in the source RDD. The groupByKey method operates on
-  * an RDD of key-value pairs, so a key generator function is not required as input. */
+  * an RDD of key-value pairs, so a key generator function is not required as input. Otherwise, we need to give
+  * a key to groupBy*/
 
     val groupDuplicateKeyPair=duplicateKeyPair.groupByKey()
     println(s"Grouped duplicate key pair value: ${groupDuplicateKeyPair.collect.mkString(",")}")
 
-    /*Note that, the return rdd has the form (b,CompactBuffer(2, 22, 222))*/
+    /* Note that, the return rdd has the form (b,CompactBuffer(2, 22, 222)) */
 
     /************************************ ReduceByKey ********************************************/
-    /* The higher-order reduceByKey method takes an associative binary operator as input and reduces values with
-     * the same key to a single value using the specified binary operator.
+    /* The higher-order reduceByKey method takes an "associative binary operator (which means a op b == b op a)",
+     * as input and reduces values with the same key to a single value using the specified binary operator.
      *
      * A binary operator takes two values as input and returns a single value as output. An associative operator
      * returns the same result regardless of the grouping of the operands. e.g (a + b)+c=a+(b+c)
@@ -168,14 +171,20 @@ def main(args:Array[String]):Unit={
       ("phy",("sam",2200.0)),
       ("phy",("ronaldo",500.0))
     )
-    /****makeRDD is identical to parallelize, because makeRDD also calls paralelize*/
+    /****makeRDD is identical to parallelize, because makeRDD also calls parallelize*/
     val employeeRDD = spark.sparkContext.makeRDD(deptEmployees)
 
     /* foldByKey will first group all elements which have the same key in an Array then apply fold on it. So the
     * accumulator is in the form of value only*/
+    /* ("dummy",0.0) is the start value of the accumulator*/
     val maxByDept = employeeRDD.foldByKey(("dummy",0.0))((acc,element)=> if(acc._2 > element._2) acc else element)
 
+    // reduceByKey is much easier to use compare to foldByKey
+    val reduceMaxByDept=employeeRDD.reduceByKey((x,y)=>if(x._2>y._2) x else y)
+
     println(s"maximum salaries in each dept ${maxByDept.collect().mkString(",")}" )
+
+    println(s"maximum salaries in each dept calculated by reduceByKey : ${reduceMaxByDept.collect().mkString(",")}" )
 
     /* Compare to foldByKey, fold does not group element by key, so the accumulator need to have the same structure of
     * the element of the rdd.*/

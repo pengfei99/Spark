@@ -14,7 +14,7 @@ object Lesson11_Recommendation {
   /*In this lesson, we will build an application which recommend music for users*/
 
   /**********************************************11.2 Data set ***********************************************/
-  /* In this lesson, we will use a dataset which are publihed by audioscrobbler. audioscrobbler was the first music
+  /* In this lesson, we will use a dataset which are published by audioscrobbler. audioscrobbler was the first music
   * recommendation system for last.fm.
   *
   * Audioscrobbler provided an open API for “scrobbling,” or recording listeners’ song plays. last.fm used

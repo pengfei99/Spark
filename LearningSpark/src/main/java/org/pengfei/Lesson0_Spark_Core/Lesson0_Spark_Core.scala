@@ -30,13 +30,18 @@ object Lesson0_Spark_Core {
   *                It executes application code concurrently in multiple threads. It can also cache data in memory
   *                or disk. An executor has the same lifespan as the application for which it is created. When a Spark
   *                application terminates, all executors created for it also terminate.
+  *
   * 2.2 Tasks : A task is the smallest unit of work that Spark sends to an executor. It is executed by a thread in an
   *             executor on a workder node. Each task performs some computations to either return a result to a driver
   *             program or partition its output for shuffle. Spark creates a task per data partition. An executor runs
   *             one or more tasks concurrently. The amount of parallelism is determined by the number of partitions.
   *             More partitions mean more tasks processing data in parallel.
   *
-  *
+  * 2.3 Executor number on a worker : If you specify the amount of executors when invoking spark-submit you should get
+  *                       the amount you ask for –num-executors X If you do not specify then by default Spark should
+  *                       use dynamic allocation which will start more executors if needed. In this case you can
+  *                       configure the behaviour, e.g. max number of executors,
+  *                       see http://spark.apache.org/docs/latest/configuration.html#dynamic-allocation
   * */
 
   /*
