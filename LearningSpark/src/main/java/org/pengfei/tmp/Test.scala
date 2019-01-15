@@ -58,6 +58,10 @@ object Test {
 
   }
 
+  def myConcat(text1:String,text2:String):String={
+    text1.concat(text2)
+  }
+
   def combineTwoColumn(cluster:Int,label:String):(Int,String)={
     return (cluster,label)
   }
