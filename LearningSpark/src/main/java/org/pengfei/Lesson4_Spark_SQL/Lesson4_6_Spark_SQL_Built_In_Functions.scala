@@ -50,10 +50,10 @@ object Lesson4_6_Spark_SQL_Built_In_Functions {
      // DSMathOperations(spark)
     /**************************************4.5.6.5 String functions **********************************/
 
-     // DSStringOperations(spark)
+      DSStringOperations(spark)
     /**************************************4.5.6.6 Window functions **********************************/
 
-      DSWindowOperations(spark)
+      // DSWindowOperations(spark)
 
     /**************************************4.5.6.7 Miscellaneous functions **********************************/
 
@@ -643,7 +643,7 @@ val nums=List(NumTest(234.5,1,30),
 *                 - percent_rank: returns the relative rank (i.e. percentile) of rows within a window partition.
 *                 - ntile(n:Int): returns the ntile group id (from 1 to n inclusive) in an ordered window partition. For
 *                          example, if n is 4, the first quarter of the rows will get value 1, the second quarter will
-*                          get 2, the thirs quarter will get 3, and the last will get 4. If the rows are less than n, it
+*                          get 2, the thirds quarter will get 3, and the last will get 4. If the rows are less than n, it
 *                          works too.
 *                 - row_number: returns a sequential number starting at 1 within a window partition.
 *   2. Analytic functions:
