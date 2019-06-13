@@ -7,6 +7,7 @@ import org.apache.spark.sql.expressions.Window
 
 object Lesson17_Get_Specific_Row_Of_Column_Group {
 
+  /* In this section, we will show you how to get specific rows of each groups after a groupby. We suppose */
   def main(args:Array[String]):Unit={
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)

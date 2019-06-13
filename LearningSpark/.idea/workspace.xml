@@ -27,10 +27,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21114">
-              <caret line="1179" column="3" selection-start-line="1179" selection-start-column="3" selection-end-line="1179" selection-end-column="3" />
+            <state relative-caret-position="201">
+              <caret line="305" column="39" lean-forward="true" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
               <folding>
                 <element signature="e#52#91#0" expanded="true" />
               </folding>
@@ -38,23 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-              <folding>
-                <element signature="e#80#119#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8352">
-              <caret line="470" column="40" selection-start-line="470" selection-start-column="40" selection-end-line="470" selection-end-column="40" />
+            <state relative-caret-position="468">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#52#91#0" expanded="true" />
               </folding>
@@ -74,14 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>coles</find>
-      <find>coales</find>
-      <find>broadcast</find>
-      <find>collect_list</find>
-      <find>==null</find>
-      <find>time_point</find>
-      <find>hyper</find>
-      <find>scenario</find>
       <find>lit</find>
       <find>equals</find>
       <find>\</find>
@@ -104,6 +102,14 @@
       <find>ExportSofaTPData</find>
       <find>cast</find>
       <find>getColumnNumNameMapping</find>
+      <find>NormalizeColNameForTransmart</find>
+      <find>fillTransmartNullForDigitCol</find>
+      <find>flume</find>
+      <find>Time_Point</find>
+      <find>design</find>
+      <find>patient_list</find>
+      <find>ExportPartientStudyVersion</find>
+      <find>replaceSpecValue</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -117,9 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_MLlib_API.scala" />
@@ -152,21 +155,24 @@
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/GeoJson.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Appendix.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_WithColumn_When_Otherwise.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc04_Parse_Apache_Access_Log.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo2.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_Keyword_extraction.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" />
       </list>
     </option>
@@ -192,6 +198,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,21 +240,73 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson0_Spark_Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson1_RDD" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson6_Spark_Streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson13_Anomaly_Detection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
               <item name="Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson17_Analyze_Clinical_Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551449717238" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559898914951" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearningJava" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -268,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson17_Analyze_Clinical_Data">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -289,8 +349,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson17_WithColumn_When_Otherwise" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_WithColumn_When_Otherwise" />
+    <configuration name="Lesson17_Compare_Two_Columns" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_Compare_Two_Columns" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -303,13 +363,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson4_6_Spark_SQL_Built_In_Functions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson4_Spark_SQL.Lesson4_6_Spark_SQL_Built_In_Functions" />
+    <configuration name="Lesson19_Keyword_extraction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson19_Keyword_extraction" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson4_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -331,13 +391,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Realism_Data_Curation" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Realism_Data_Curation" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.tmp.Test" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson17_Analyze_Clinical_Data.*" />
+          <option name="PATTERN" value="org.pengfei.tmp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,18 +436,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
-      <item itemvalue="Application.Lesson17_WithColumn_When_Otherwise" />
-      <item itemvalue="Application.Realism_Data_Curation" />
       <item itemvalue="Application.Lesson4_Exc04_Parse_Apache_Access_Log" />
-      <item itemvalue="Application.Lesson4_6_Spark_SQL_Built_In_Functions" />
+      <item itemvalue="Application.Lesson17_Compare_Two_Columns" />
+      <item itemvalue="Application.Lesson19_Keyword_extraction" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Lesson19_Keyword_extraction" />
         <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
+        <item itemvalue="Application.Lesson17_Compare_Two_Columns" />
         <item itemvalue="Application.Lesson4_Exc04_Parse_Apache_Access_Log" />
-        <item itemvalue="Application.Lesson4_6_Spark_SQL_Built_In_Functions" />
-        <item itemvalue="Application.Realism_Data_Curation" />
-        <item itemvalue="Application.Lesson17_WithColumn_When_Otherwise" />
       </list>
     </recent_temporary>
   </component>
@@ -497,11 +557,25 @@
       <workItem from="1551687473387" duration="607000" />
       <workItem from="1552992801717" duration="2262000" />
       <workItem from="1553009857942" duration="28000" />
+      <workItem from="1553511057899" duration="132000" />
+      <workItem from="1553847547784" duration="8233000" />
+      <workItem from="1554104993020" duration="3460000" />
+      <workItem from="1554799423877" duration="1236000" />
+      <workItem from="1554905473636" duration="815000" />
+      <workItem from="1555317297124" duration="2237000" />
+      <workItem from="1555491049566" duration="632000" />
+      <workItem from="1556030816190" duration="544000" />
+      <workItem from="1556269715901" duration="11054000" />
+      <workItem from="1556780320999" duration="1783000" />
+      <workItem from="1556893276315" duration="1865000" />
+      <workItem from="1556895604093" duration="5618000" />
+      <workItem from="1557384759443" duration="116000" />
+      <workItem from="1559891068354" duration="4633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1042178000" />
+    <option name="totallyTimeSpent" value="1084536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,23 +587,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1600" height="1082" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="962" extended-state="6" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.253866" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.5910615" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5101496" side_tool="true" weight="0.23693803" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.2969697" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.29666254" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.32961586" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49626467" weight="0.32738853" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.48985043" weight="0.27240977" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.48985043" weight="0.22545454" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.38952747" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -553,7 +627,7 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.253866" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.5910615" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5101496" side_tool="true" weight="0.23693803" />
@@ -563,7 +637,7 @@
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49626467" weight="0.32738853" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.48985043" weight="0.27240977" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.48985043" visible="true" weight="0.23068783" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.38952747" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -587,27 +661,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="178" column="4" lean-forward="true" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="478" column="53" selection-start-line="478" selection-start-column="53" selection-end-line="478" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="611" column="50" selection-start-line="611" selection-start-column="50" selection-end-line="611" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1314">
@@ -640,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="17" column="104" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -711,13 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="86" column="3" lean-forward="true" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -807,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -839,13 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="629" column="14" lean-forward="true" selection-start-line="629" selection-start-column="14" selection-end-line="629" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -877,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc04_Parse_Apache_Access_Log.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -907,54 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_WithColumn_When_Otherwise.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/GeometricMean.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="63" selection-start-line="60" selection-start-column="2" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21114">
-          <caret line="1179" column="3" selection-start-line="1179" selection-start-column="3" selection-end-line="1179" selection-end-column="3" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8352">
-          <caret line="470" column="40" selection-start-line="470" selection-start-column="40" selection-end-line="470" selection-end-column="40" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,6 +935,121 @@
           <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
           <folding>
             <element signature="e#80#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_WithColumn_When_Otherwise.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="1019" column="14" selection-start-line="1019" selection-start-column="14" selection-end-line="1019" selection-end-column="14" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6816">
+          <caret line="352" column="31" selection-start-line="352" selection-start-column="31" selection-end-line="352" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="242" column="4" lean-forward="true" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3493">
+          <caret line="522" column="40" selection-start-line="522" selection-start-column="40" selection-end-line="522" selection-end-column="40" />
+          <folding>
+            <element signature="e#45#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#45#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_Keyword_extraction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1145">
+          <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="305" column="39" lean-forward="true" selection-start-line="305" selection-start-column="39" selection-end-line="305" selection-end-column="39" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
           </folding>
         </state>
       </provider>

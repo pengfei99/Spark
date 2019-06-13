@@ -13,13 +13,13 @@ object Test {
     val spark=SparkSession.builder().appName("Test").master("local[2]").getOrCreate()
     import spark.implicits._
 
-    val clusterLabels=spark.sparkContext.parallelize(Array((0,"normal"),(0,"normal"),(0,"back"),(1,"neptune"),(1,"satan"),(1,"nep"))).toDF("cluster","label").as[(Int,String)]
+   /* val clusterLabels=spark.sparkContext.parallelize(Array((0,"normal"),(0,"normal"),(0,"back"),(1,"neptune"),(1,"satan"),(1,"nep"))).toDF("cluster","label").as[(Int,String)]
 
     spark.udf.register("labelCount",(label:String)=>labelCount(label))
    val trans=clusterLabels.withColumn("labelWithCount",expr("labelCount(label)"))
     val groupedClusterLabels=trans.groupBy("cluster").agg(collect_list("labelWithCount").as("labels"))
 
-    groupedClusterLabels.show()
+    groupedClusterLabels.show()*/
 
     /*
     val weightedClusterEntropy=groupedClusterLabels.map{
@@ -54,9 +54,15 @@ object Test {
         val labels = clusterLabels.map{case(_, label)=>label}.toSeq
     }*/
     //println(s"${weightedClusterEntropy.toArray.mkString(";")}")
+    val NeutroCols= Array("Monocytes_nb","HLA_DR_per_monocyte","Neutro_CD10low_CD16high_percentage Neutro_CD10high_CD16high_percentage", "Neutro_CD10low_CD16low_percentage Neutro_CD10high_CD16low_percentage")
+    val fullCols=generateFullCols("FLOW_CYTOMETRY",NeutroCols)
 
+    fullCols.foreach(println)
 
   }
+
+
+
 
   def myConcat(text1:String,text2:String):String={
     text1.concat(text2)

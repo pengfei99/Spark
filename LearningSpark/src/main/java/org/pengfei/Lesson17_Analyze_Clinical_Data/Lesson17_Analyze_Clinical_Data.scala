@@ -23,7 +23,8 @@ object Lesson17_Analyze_Clinical_Data {
    * - 5. deal with duplicates rows/null values/change column names
    * - 6. Merge columns
    * - 7. Joining data
-   * - 8. Other helping function
+   * - 8. Compare two columns if they have the same value for each row
+   * - 9. Other helping function
    * */
 
   /******************************************* Configuration ***************************************/
@@ -302,7 +303,41 @@ val test=BuildColumnsWithTimePointS2(markerTestDf)
 
 test.show(5, false)*/
 
-/* Test with full dataset*/
+/* Test with Cytometry Tcells dataset*/
+
+/*Step 0: build columns with Time point */
+val tCellsCols= Array("Treg_Percentage","Treg_cells_per_µl","T_cells_percentage","T_cells_per_µl","T4_cells_percentage",
+  "T4_cells_per_µl","T8_cells_percentage","T8_cells_per_µl","Ratio_T4_T8_percentage","T4_T8_cells_percentage")
+
+    val fullSortedTCellsCols=generateFullCols("FLOW_CYTOMETRY",tCellsCols)
+    val dfCyto=dfWithTP.filter(col("Plateform")==="FLOW_CYTOMETRY")
+    val dfTCells=dfCyto.filter(col("Marker").isin(tCellsCols: _*))
+
+    val tCellsTPRawData=BuildColumnsWithTimePointS2(dfTCells)
+
+    tCellsTPRawData.count()
+    tCellsTPRawData.columns.size
+
+    /* Step 1: normalize data for transmart format*/
+
+    val tCellsData=NormalizeColNameForTransmart(tCellsTPRawData, fullSortedTCellsCols)
+
+    //neutroData.show(5)
+
+    /*Step2 : change col name*/
+
+    /*Step3 : check null cell count for each column*/
+
+    /* Step 4 : fill null value with transmart required value*/
+
+    /* Step 5: Write data to disk*/
+    // WriteDataToDisk(tCellsData,"hdfs://hadoop-nn.bioaster.org:9000/realism/output","FC_TCells_V3")
+
+    /* Step 6 : Get column name number mapping */
+    val tCellsColNameNumMapping=getColumnNumNameMapping(tCellsData)
+
+    tCellsColNameNumMapping.foreach(println)
+
 /*
 // The implementation of bioMarker transformation is done in BuildColumnsWithTimePointS2, it's also strongly depends on
 // the rowToColumn function
@@ -347,7 +382,7 @@ println(s"The row number is ${rowNum}, the column number is ${colNum}")
      * - Merge sofa v1 and v2 columns, this steps calls function mergeSofaColumns, which is the core function of merge.
      * */
 
-   val fullSofaDf=ExportMergedSofa(dfWithTP)
+   //val fullSofaDf=ExportMergedSofa(dfWithTP)
 
 
 
@@ -368,12 +403,15 @@ val patientListDf=spark.read.option("inferSchema", true).option("header",true)
     //patientListDf.show(5)
 
 
-    //ExportPartientStudyVersion(patientListDf,csvDF)
+    ExportPartientStudyVersion(patientListDf,csvDF)
 
+    /***********************************************************************************************************
+      * ******************************************* 17.8 Compare two columns ********************************
+      * ******************************************************************************************************/
 
 
     /***********************************************************************************************************
-      * ******************************************* 17.8 Other helping function ********************************
+      * ******************************************* 17.9 Other helping function ********************************
       * ******************************************************************************************************/
 
     /* We also developed a few helping function which can the export to transmart much easier. You can find them
@@ -736,6 +774,8 @@ return df
       .agg(collect_list("filed_map")) // return a list of map
       .as[(String, Seq[Map[String, String]])] // <-- leave Rows for typed pairs
       .map { case (id, list) => (id, list.reduce(_ ++ _)) } // <-- concatenate all maps to a single map
+      // the reduce(_ ++ _) translates to reduce((a,b)=>a++b) where a, b are lists, ++ is a method in list interface
+      // which concatenates list b to a.
       .toDF(objectIdColumnName, "filed_map")
 
     groupedFiledIdValueMap.show(10, false)
@@ -1104,17 +1144,25 @@ return df
 
   /******************************************** 17.7 Joining data *******************************************/
 
+  /******************************************** 17.8 Compare two columns *************************************/
 
-  /******************************************** 17.8 Other helping function ************************************/
+  /******************************************** 17.9 Other helping function ************************************/
 
   /* This function add a new STUDY_ID column, rename the Patient column to subjID*/
   def NormalizeColNameForTransmart(df:DataFrame,colNames:Array[String]):DataFrame={
     val spark=df.sparkSession
     import spark.implicits._
-    //Add STUDY_ID column
-    val dfWithStudyID=df.withColumn("STUDY_ID",lit(studyID))
-    //change Patient to SUBJ_ID
+    /* step 0: cast all column to string*/
+    val dfStr=df.select(df.columns.map(c=>col(c).cast(StringType)):_*)
+
+    /* step 1: fill na with user defined null*/
+    val dfNaFill=dfStr.na.fill(nullValue,dfStr.columns)
+
+    /* step 2: add column study_id */
+    val dfWithStudyID=dfNaFill.withColumn("STUDY_ID",lit(studyID))
+    /* step 3: change col name Patient to SUBJ_ID*/
     val dfWithSub=dfWithStudyID.withColumnRenamed("Patient",subjID)
+    /* step 4: Re-order columns*/
     val colNameWithOrder=Array("STUDY_ID",subjID)++colNames.filter(!_.equals(patientIdColName))
     val result=dfWithSub.select(colNameWithOrder.head,colNameWithOrder.tail:_*)
     return result
@@ -1208,6 +1256,30 @@ return df
     subGroupTimePoint.show(10)
 
     return subGroup
+  }
+
+  /**
+    * This function build full colName for bioMarker, flow cytometry after row to column transformation
+    * @author Pengfei liu
+    * @version 1.0
+    * @since 2019-07-06
+    * @param CategoryName The category name of the bioMarker e.g. FLOW_CYTOMETRY.
+    * @param colNames colNames represent all bioMarker values which will be transformed into column names in the result
+    * @return  Array[String] full list of the bioMarker resulting col name
+    * */
+  def generateFullCols(CategoryName:String, colNames:Array[String]):Array[String]={
+    val tps=Array("D00","D01","D01-D02","D02","D03-D04","D05-D07","D14","D28","D60")
+    val tails=Array("Value","Imputed_Value","Missing_Value_Type")
+    var result:Array[String]=Array()
+    for(colName<-colNames){
+      for(tp<-tps){
+        for(tail<-tails){
+          val fullColName=s"${CategoryName}_${colName}_${tp}/${tail}"
+          result=result:+fullColName
+        }
+      }
+    }
+    return result
   }
 
   /***********************************************************************************************************
