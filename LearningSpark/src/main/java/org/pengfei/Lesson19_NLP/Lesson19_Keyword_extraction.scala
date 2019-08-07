@@ -1,4 +1,4 @@
-package org.pengfei
+package org.pengfei.Lesson19_NLP
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
@@ -119,7 +119,6 @@ keywords, because full text search is time consuming
   def replaceSpecValue(rawDf:DataFrame,colNames:Array[String],specValue:String,newValue:String):DataFrame={
     /*Step 0 : cast all column to string*/
     val spark=rawDf.sparkSession
-    import spark.implicits._
     val df=rawDf.select(rawDf.columns.map(c=>col(c).cast(StringType)):_*)
 
     /*Step 1 : transform spec value to null*/

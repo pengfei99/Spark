@@ -19,10 +19,11 @@ object Lesson0_Spark_Core {
   * 1.1 Driver Program : A driver program is an spark application that uses Spark as a library. It provides the data
   *                      processing code that Spark executes on the worker nodes. A driver program can launch one or
   *                      more jobs on a Spark cluster.
-  * 1.2 Cluster Manager :(standalone(spark default resource manager), yarn, mesos), cluster manager (resource manager)
+  * 1.2 Cluster Manager :(standalone(spark default resource manager), yarn, mesos, ec2, Kubernetes), cluster manager
+  *                      (resource manager)
   *                      can acquire cluster resource for executing a job. It provides low-level scheduling of cluster
   *                      resources across applications. It enables multiple applications to share cluster resources
-  *                      and run on the same workder nodes.
+  *                      and run on the same worker nodes.
   *
   * 2. Worker Node : worker node provides CPU, memory, and storage to a spark application.
   * 2.1 Executor : spark executors runs on worker node as distributed process of a Spark application(aka. driver
@@ -32,7 +33,7 @@ object Lesson0_Spark_Core {
   *                application terminates, all executors created for it also terminate.
   *
   * 2.2 Tasks : A task is the smallest unit of work that Spark sends to an executor. It is executed by a thread in an
-  *             executor on a workder node. Each task performs some computations to either return a result to a driver
+  *             executor on a worker node. Each task performs some computations to either return a result to a driver
   *             program or partition its output for shuffle. Spark creates a task per data partition. An executor runs
   *             one or more tasks concurrently. The amount of parallelism is determined by the number of partitions.
   *             More partitions mean more tasks processing data in parallel.
@@ -89,10 +90,10 @@ object Lesson0_Spark_Core {
 * The Spark API consists of two important abstractions: SparkContext and Resilient Distributed Datasets (RDDs).
   *
   * SparkContext(SparkSession)
-  * In older version of Spark there was different contexts that was entrypoints to the different api (sparkcontext for
+  * In older version of Spark there was different contexts that was entry points to the different api (sparkcontext for
   * the core api, sql context for the spark-sql api, streaming context for the Dstream api etc.) this was source of
   * confusion for the developer and was a point of optimization for the spark team, so in the most recent version of
-  * spark there is only one entrypoint (the spark session) and from this you can get the various other entrypoint
+  * spark there is only one entry point (the spark session) and from this you can get the various other entry point
   * (the spark context , the streaming context , etc.)
   * */
   def main(args:Array[String]): Unit ={

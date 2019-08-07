@@ -54,10 +54,7 @@ object Test {
         val labels = clusterLabels.map{case(_, label)=>label}.toSeq
     }*/
     //println(s"${weightedClusterEntropy.toArray.mkString(";")}")
-    val NeutroCols= Array("Monocytes_nb","HLA_DR_per_monocyte","Neutro_CD10low_CD16high_percentage Neutro_CD10high_CD16high_percentage", "Neutro_CD10low_CD16low_percentage Neutro_CD10high_CD16low_percentage")
-    val fullCols=generateFullCols("FLOW_CYTOMETRY",NeutroCols)
 
-    fullCols.foreach(println)
 
   }
 

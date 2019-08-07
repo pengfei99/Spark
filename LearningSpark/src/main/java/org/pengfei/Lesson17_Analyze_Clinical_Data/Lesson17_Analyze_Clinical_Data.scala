@@ -1223,6 +1223,19 @@ return df
       colNameNumMap+=(i->col)
       i=i+1
     }
+     /* To understand the following function, it's better to break it into two parts
+     * 1. val x:Seq[(Int,String)] = colNameNumMap.toSeq.sortWith(_._1 < _._1)
+     *
+     * 2. ListMap(x:_*)
+     *
+     * The sortWith function returns a sequence of tuples, it takes a boolean expression, in
+     * our example, _._1 means the first element of a tuple. We can also replace the sortWith
+     * function with sortBy(_._1), which means sort the sequence by using the first element of the
+     * tuples, from low to high. It also returns a sequence of tuples.
+     *
+     * The _* is used to convert the data so it will be passed as multiple parameters. In our example,
+     * x has a Sequence type, but x:_* has tuple type
+     * */
 
     ListMap(colNameNumMap.toSeq.sortWith(_._1 < _._1):_*)
   }
