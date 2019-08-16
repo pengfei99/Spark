@@ -24,7 +24,7 @@ These projects are all build under intellij. So clone the project and import it 
 ## Authors
 
 * **Pengfei Liu** 
-
+* **liu.pengfei@hotmail.fr**
 
 ## License
 
