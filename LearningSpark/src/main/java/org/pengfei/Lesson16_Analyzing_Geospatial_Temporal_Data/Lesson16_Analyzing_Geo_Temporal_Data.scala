@@ -1,5 +1,6 @@
 package org.pengfei.Lesson16_Analyzing_Geospatial_Temporal_Data
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import spray.json.{JsObject, JsString, JsValue, RootJsonFormat}
@@ -146,8 +147,11 @@ object Lesson16_Analyzing_Geo_Temporal_Data {
     Logger.getLogger("akka").setLevel(Level.OFF)
     val spark=SparkSession.builder().appName("Lesson16_Analyzing_Geo_Temporal_Data").master("local[2]").getOrCreate()
     import spark.implicits._
+// read config file
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
 
-    val filePath="/DATA/data_set/spark/basics/Lesson16_Analyzing_Geo_Temporal_Data/trip_data_sample.csv"
+    val filePath=s"${path}/spark_lessons/Lesson16_Analyzing_Geo_Temporal_Data/trip_data_sample.csv"
 
     val taxiRaw=spark.read.option("header","true").csv(filePath)
 

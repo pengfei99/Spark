@@ -1,17 +1,396 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala" line="519" mnemonic="8" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" line="101" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearningSpark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LearningSpark.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$apply$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$apply$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$apply$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ModifyTimePoint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ModifyTimePoint$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$countNullValue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$countNullValue$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getDistinctValueOfColumns$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getDistinctValueOfColumns$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Analyze_Clinical_Data$$getFiledValue$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Analyze_Clinical_Data$$getFiledValue$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$removeRowsWithSpecValues$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$removeRowsWithSpecValues$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$replaceSpecValue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$replaceSpecValue$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator10$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$14$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$addTextToLines$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$6$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$8$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithNumTypes$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithNumTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/test$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Customer$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Customer$4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Transaction$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Transaction$4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$TransactionDetail$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$TransactionDetail$4$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_2_Spark_Application$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_2_Spark_Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/CustomArthMean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/GeometricMean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$Person$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$anonfun$DSTransformationOperation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator17$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator25$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator33$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator41$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator49$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator57$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator65$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator73$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator81$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Customer$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailArrayBody$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailArrayBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailStringBody$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailStringBody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Person$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Product$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesByCity$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesByCity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesSummary$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesSummary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Transaction$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$DSCollectionOperations$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$DSUDFOperations$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator13$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator21$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator25$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator26$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator27$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator38$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator46$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator54$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator62$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator66$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator67$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator74$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$Nasdaq$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$Nasdaq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$NumTest$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$NumTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$crossTab$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$crossTab.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$$typecreator9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/MergeListsUDAF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_3_dimensionality_reduction_Algo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_3_dimensionality_reduction_Algo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$11$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$22$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$generateCircle$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$ImdbDS$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$ImdbDS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$typecreator7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$FlumeStreamExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$QueueStreamExampl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$RawSocketStreamExampl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$RawSocketStreamExampl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$linesHash$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$14$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$WordCounts$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$WordCounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$Words$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$Words.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator11$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator30$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator37$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator44$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator49$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceData$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceProvider$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$WordWithTime$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$WordWithTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator13$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator21$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator29$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$Message$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$kafkaMessage$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$kafkaMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -24,97 +403,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="1291" column="9" selection-start-line="1291" selection-start-column="9" selection-end-line="1291" selection-end-column="9" />
-              <folding>
-                <element signature="e#52#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4032">
-              <caret line="226" column="65" selection-start-line="226" selection-start-column="65" selection-end-line="226" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2700">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1314">
-              <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#52#91#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -124,195 +412,14 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sofaD1</find>
-      <find>Realism01</find>
-      <find>regu</find>
-      <find>expression</find>
-      <find>regexp</find>
-      <find>substring</find>
-      <find>register</find>
-      <find>exportMergedSofa</find>
-      <find>ExportMergedSofa</find>
-      <find>Array</find>
-      <find>|</find>
-      <find>null</find>
-      <find>ExportDemographicData</find>
-      <find>join</find>
-      <find>Day</find>
-      <find>sofa</find>
-      <find>ExportSofaTPData</find>
-      <find>cast</find>
-      <find>getColumnNumNameMapping</find>
-      <find>NormalizeColNameForTransmart</find>
-      <find>fillTransmartNullForDigitCol</find>
-      <find>flume</find>
-      <find>Time_Point</find>
-      <find>design</find>
-      <find>patient_list</find>
-      <find>ExportPartientStudyVersion</find>
-      <find>replaceSpecValue</find>
-      <find>generateFullCols</find>
-      <find>log</find>
-      <find>slf4j</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>,</replace>
-      <replace>logger</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML</dir>
-      <dir>$PROJECT_DIR$/src/main/java/org/pengfei</dir>
-      <dir>$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL</dir>
-    </dirStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_Spark_ML.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_Spark_Structure_Streaming.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/MergeListsUDAF.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/MergeListsUDAF.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/SteamingSource.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection_With_Streaming.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/LSAQueryEngine.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/RichGeometry.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/GeoJson.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Appendix.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_WithColumn_When_Otherwise.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc04_Parse_Apache_Access_Log.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo2.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_Keyword_extraction.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/LoggingWithScala.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/simplelogger.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala" />
-      </list>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="LearningSpark" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="19" />
-    <option name="width" value="944" />
-    <option name="height" value="396" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson17_Analyze_Clinical_Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson19_NLP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pengfei" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson20_GPFS_Stats" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1Qv0O5VFeQdIkvAvk4k5hEMXLDZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -327,6 +434,10 @@
       <recent name="org.pengfei.Lesson20_GPFS_Stats" />
       <recent name="org.pengfei.Lesson13_Anomaly_Detection" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/pengfei/tmp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -340,20 +451,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson20_GPFS_Stats">
+  <component name="RunManager" selected="Application.Lesson14_Spark_Xml_Parsing">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson17_Analyze_Clinical_Data" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_Analyze_Clinical_Data" />
+    <configuration name="Lesson14_Latent_Semantic_Analysis" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.Lesson14_Latent_Semantic_Analysis" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson17_Analyze_Clinical_Data.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -361,8 +472,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson17_Compare_Two_Columns" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_Compare_Two_Columns" />
+    <configuration name="Lesson14_Spark_Xml_Parsing" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.Lesson14_Spark_Xml_Parsing" />
+      <module name="LearningSpark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson16_Analyzing_Geo_Temporal_Data" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson16_Analyzing_Geospatial_Temporal_Data.Lesson16_Analyzing_Geo_Temporal_Data" />
+      <module name="LearningSpark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pengfei.Lesson16_Analyzing_Geospatial_Temporal_Data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson17_Analyze_Clinical_Data" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_Analyze_Clinical_Data" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -389,34 +528,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson20_GPFS_Stats" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson20_GPFS_Stats.Lesson20_GPFS_Stats" />
-      <module name="LearningSpark" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson20_GPFS_Stats.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.tmp.Test" />
-      <module name="LearningSpark" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.pengfei.tmp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -424,12 +535,14 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -447,19 +560,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
-      <item itemvalue="Application.Lesson17_Compare_Two_Columns" />
       <item itemvalue="Application.Lesson19_Keyword_extraction" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Lesson20_GPFS_Stats" />
+      <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
+      <item itemvalue="Application.Lesson16_Analyzing_Geo_Temporal_Data" />
+      <item itemvalue="Application.Lesson14_Latent_Semantic_Analysis" />
+      <item itemvalue="Application.Lesson14_Spark_Xml_Parsing" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lesson20_GPFS_Stats" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Lesson19_Keyword_extraction" />
+        <item itemvalue="Application.Lesson14_Spark_Xml_Parsing" />
+        <item itemvalue="Application.Lesson14_Latent_Semantic_Analysis" />
+        <item itemvalue="Application.Lesson16_Analyzing_Geo_Temporal_Data" />
         <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
-        <item itemvalue="Application.Lesson17_Compare_Two_Columns" />
+        <item itemvalue="Application.Lesson19_Keyword_extraction" />
       </list>
     </recent_temporary>
   </component>
@@ -588,11 +701,12 @@
       <workItem from="1562055447866" duration="700000" />
       <workItem from="1562140899338" duration="2600000" />
       <workItem from="1565190417104" duration="517000" />
+      <workItem from="1568635729538" duration="1968000" />
+      <workItem from="1568710839441" duration="1091000" />
+      <workItem from="1569590256274" duration="592000" />
+      <workItem from="1569590863275" duration="5536000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1095349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,453 +717,21 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="962" extended-state="6" />
-    <layout>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.28952992" />
-      <window_info id="Structure" order="5" weight="0.25" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5101496" side_tool="true" weight="0.23693803" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.30060607" />
-      <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.32961586" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49626467" weight="0.32738853" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.48985043" weight="0.22424242" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.38952747" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32866243" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Bean Validation" order="2" weight="0.32799146" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32932165" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32959402" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.40449437" />
-      <window_info id="Structure" order="5" weight="0.25" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5101496" side_tool="true" weight="0.23693803" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.30139935" />
-      <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.32961586" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49626467" weight="0.32738853" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32848486" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.48985043" weight="0.22497308" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.38952747" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32866243" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Bean Validation" order="2" weight="0.32799146" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32932165" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32959402" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="104" selection-start-line="15" selection-start-column="2" selection-end-line="17" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="72" column="29" selection-start-line="71" selection-start-column="3" selection-end-line="72" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot/scala.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="102" column="23" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/MergeListsUDAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4932">
-          <caret line="279" column="119" selection-start-line="279" selection-start-column="74" selection-end-line="279" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection_With_Streaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/SteamingSource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/edu/umd/cloud9/2.0.1/cloud9-2.0.1.jar!/edu/umd/cloud9/collection/XMLInputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Pivot.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10332">
-          <caret line="583" column="49" selection-start-line="583" selection-start-column="45" selection-end-line="583" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
-          <caret line="163" column="36" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
-          <folding>
-            <element signature="e#65#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/LSAQueryEngine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="114" column="88" selection-start-line="114" selection-start-column="88" selection-end-line="114" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/GeoJson.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
-          <folding>
-            <element signature="e#65#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/RichGeometry.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding>
-            <element signature="e#65#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="146" column="60" selection-start-line="146" selection-start-column="60" selection-end-line="146" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4158">
-          <caret line="236" column="62" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="323" column="31" lean-forward="true" selection-start-line="323" selection-start-column="31" selection-end-line="323" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="108" selection-start-line="9" selection-start-column="3" selection-end-line="11" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc04_Parse_Apache_Access_Log.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="541" column="46" selection-start-line="541" selection-start-column="46" selection-end-line="541" selection-end-column="46" />
-          <folding>
-            <element signature="e#39#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson4_Spark_SQL/GeometricMean.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-          <folding>
-            <element signature="e#80#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_WithColumn_When_Otherwise.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Realism_Data_Curation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="1019" column="14" selection-start-line="1019" selection-start-column="14" selection-end-line="1019" selection-end-column="14" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6816">
-          <caret line="352" column="31" selection-start-line="352" selection-start-column="31" selection-end-line="352" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="242" column="4" lean-forward="true" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3493">
-          <caret line="522" column="40" selection-start-line="522" selection-start-column="40" selection-end-line="522" selection-end-column="40" />
-          <folding>
-            <element signature="e#45#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#45#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_Keyword_extraction.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/simplelogger.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/LoggingWithScala.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Get_Specific_Row_Of_Column_Group.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson1_RDD/Lesson1_RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4032">
-          <caret line="226" column="65" selection-start-line="226" selection-start-column="65" selection-end-line="226" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Compare_Two_Columns.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="1291" column="9" selection-start-line="1291" selection-start-column="9" selection-end-line="1291" selection-end-column="9" />
-          <folding>
-            <element signature="e#52#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>

@@ -1,5 +1,6 @@
 package org.pengfei.Lesson17_Analyze_Clinical_Data
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
@@ -26,11 +27,12 @@ object Lesson17_Analyze_Clinical_Data {
    * - 8. Compare two columns if they have the same value for each row
    * - 9. Other helping function
    * */
-
+  val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+  val  path= sparkConfig.getString("sourceDataPath")
   /******************************************* Configuration ***************************************/
 
-  val csvFile="/DATA/data_set/spark/basics/Lesson17_Analyse_Clinical_Data/raw_data.csv"
-  val outputPath="/DATA/data_set/spark/basics/Lesson17_Analyse_Clinical_Data"
+  val csvFile=s"${path}/spark_lessons/Lesson17_Analyse_Clinical_Data/raw_data.csv"
+  val outputPath=s"${path}/spark_lessons/Lesson17_Analyse_Clinical_Data"
   val nullValue="null"
   val timePointColName="Time_Point"
   val patientIdColName="Patient"
@@ -394,11 +396,13 @@ println(s"The row number is ${rowNum}, the column number is ${colNum}")
      * As we merged the sofa score of v1 and v2, we need to build a new column for indicating the data's study version
       *  The REALISM_patient_list.csv contains two column, Patient v1 column contains all patient id of version1.
      * Patient v2 column contains all patient id of version 2. */
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
 val patientListDf=spark.read.option("inferSchema", true).option("header",true)
       .option("nullValue"," ")
       .option("encoding", "UTF-8")
       .option("delimiter",",")
-      .csv("/DATA/data_set/spark/basics/Lesson17_Analyse_Clinical_Data/REALISM_patient_list.csv")
+      .csv(s"${path}/Lesson17_Analyse_Clinical_Data/REALISM_patient_list.csv")
 
     //patientListDf.show(5)
 
@@ -436,11 +440,10 @@ val patientListDf=spark.read.option("inferSchema", true).option("header",true)
     * @author Pengfei liu
     * @version 1.0
     * @since 2019-02-13
-    * @param patientListDf patientListDf is a  dataframe built from REALISM_patient_list.csv
-    * @param df df is the main source dataframe where we get all the study data
+    * @param patientListDf is a  dataframe built from REALISM_patient_list.csv
+    * @param df is the main source dataframe where we get all the study data
     * @return DataFrame
     * */
-/** patientListDf , df is  */
   def ExportPartientStudyVersion(patientListDf:DataFrame,df:DataFrame):DataFrame={
     /* Step1: build a dataframe for Patient v1 which contains patientId, and study_version which contains value only
     * for patient of v1,  */
@@ -547,7 +550,7 @@ return df
     * @version 1.0
     * @since 2018-12-20
     * @param df The source data frame in which the transformation will take place.
-    * @param allColumns  allColumns is a list of String which contains all the column name
+    * @param valueColumns  allColumns is a list of String which contains all the column name
     *                           the name of the newly created column name.
     * @param utilityColumns utilityColumns
     *                              become a new row in the corresponding filed column
@@ -704,7 +707,7 @@ return df
     * @author Pengfei liu
     * @version 1.0
     * @since 2018-12-20
-    * @param df The source data frame in which the transformation will take place.
+    * @param rawDf The source data frame in which the transformation will take place.
     * @param targetIdColumnName The column in the data frame which contains the name of the filed. Each row will become
     *                           the name of the newly created column name.
     * @param targetValueColumnName The column in the data frame which contains the value of the filed. Each row will
@@ -886,7 +889,7 @@ return df
     * @author Pengfei liu
     * @version 1.0
     * @since 2018-12-20
-    * @param rawDf The source data frame.
+    * @param df The source data frame.
     * @return Unit
     * */
   def countNullValue(df:DataFrame):Unit={
@@ -954,7 +957,7 @@ return df
     * @author Pengfei liu
     * @version 1.0
     * @since 2018-12-20
-    * @param df The source data frame.
+    * @param rawDf The source data frame.
     * @param colNames A list of column names
     * @param specValue A string value which needs to be replaced
     * @param newValue A string value which will repalce the old value

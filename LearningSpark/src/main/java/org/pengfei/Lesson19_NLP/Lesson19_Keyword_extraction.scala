@@ -1,5 +1,6 @@
 package org.pengfei.Lesson19_NLP
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.StringType
@@ -66,8 +67,9 @@ keywords, because full text search is time consuming
     * if we read with pandas, it works, so we read the papers.csv and select the "id, year, title, abstract
     * columns and export to csv(abstract1.csv) with "|" as delimiter.
     * */
-
-    val filePath="/DATA/data_set/spark/pyspark/Lesson2_Keyword_Extraction/abstract1.csv"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val filePath=s"${path}/pyspark/Lesson2_Keyword_Extraction/abstract1.csv"
     val rawDf = spark.read
       .option("inferSchema", true)
       .option("header",true)
@@ -110,7 +112,7 @@ keywords, because full text search is time consuming
     * @author Pengfei liu
     * @version 1.0
     * @since 2018-12-20
-    * @param df The source data frame.
+    * @param rawDf The source data frame.
     * @param colNames A list of column names
     * @param specValue A string value which needs to be replaced
     * @param newValue A string value which will repalce the old value

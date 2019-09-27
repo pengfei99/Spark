@@ -1,6 +1,7 @@
 package org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis
 
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
 import org.apache.spark.ml.feature.{CountVectorizer, IDF, RegexTokenizer, StopWordsRemover}
@@ -144,7 +145,9 @@ object Lesson14_Latent_Semantic_Analysis {
   val spark=SparkSession.builder().appName("Lesson14_Latent_Semantic_Analysis").master("local[2]").getOrCreate()
   import spark.implicits._
 
-  val filePath="/DATA/data_set/spark/basics/Lesson14_Latent_Semantic_Analysis/wikidump.xml"
+  val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+  val  path= sparkConfig.getString("sourceDataPath")
+  val filePath=s"${path}/spark_lessons/Lesson14_Latent_Semantic_Analysis/wikidump.xml"
 
 
 

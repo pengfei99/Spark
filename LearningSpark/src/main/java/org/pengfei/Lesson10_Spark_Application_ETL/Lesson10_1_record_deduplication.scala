@@ -57,7 +57,7 @@ object Lesson10_1_record_deduplication {
   *
   * The underlying values of the fields that were used to create the data set
   * were removed to protect the privacy of the patients. Numerical identifiers, the match
-  * scores for the fields, and the label for each pair (match versus nonmatch) were published
+  * scores for the fields, and the label for each pair (match versus non-match) were published
   * for use in record deduplication research.
   *
   * $ mkdir linkage
@@ -71,7 +71,7 @@ object Lesson10_1_record_deduplication {
     Logger.getLogger("akka").setLevel(Level.OFF)
     val spark=SparkSession.builder().master("local[2]").appName("Lesson10_Spark_Application_ETL").getOrCreate()
 
-    val filePath="/DATA/data_set/spark/basics/Lesson10_Spark_Application_ETL/hospital_data"
+    val filePath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson10_Spark_Application_ETL/hospital_data"
     val block1Name="/block_1.csv"
 /* One example line of the csv file : 39086,47614,1,?,1,?,1,1,1,1,1,TRUE, ? means nullValue, in the following spark
 * read, in option, we specify this. */

@@ -1,5 +1,6 @@
 package org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.feature.{RegexTokenizer, StopWordsRemover, Tokenizer}
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -17,7 +18,10 @@ object Lesson14_Spark_Xml_Parsing {
     val spark=SparkSession.builder().appName("Lesson14_Spark_Xml_Parsing").master("local[2]").getOrCreate()
     import spark.implicits._
 
-    val filePath="/DATA/data_set/spark/basics/Lesson14_Latent_Semantic_Analysis/mini-wikidump.xml"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+
+    val filePath=s"${path}/spark_lessons/Lesson14_Latent_Semantic_Analysis/mini-wikidump.xml"
 
     /* As we have bugs in parsing the xml files, so here we use another xml parsing techinque to parse the wiki
     * xml dump.

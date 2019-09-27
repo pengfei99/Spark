@@ -10,8 +10,8 @@ object Test {
   def main(args:Array[String]):Unit={
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
-    val spark=SparkSession.builder().appName("Test").master("local[2]").getOrCreate()
-    import spark.implicits._
+   // val spark=SparkSession.builder().appName("Test").master("local[2]").getOrCreate()
+   // import spark.implicits._
 
    /* val clusterLabels=spark.sparkContext.parallelize(Array((0,"normal"),(0,"normal"),(0,"back"),(1,"neptune"),(1,"satan"),(1,"nep"))).toDF("cluster","label").as[(Int,String)]
 
@@ -54,6 +54,15 @@ object Test {
         val labels = clusterLabels.map{case(_, label)=>label}.toSeq
     }*/
     //println(s"${weightedClusterEntropy.toArray.mkString(";")}")
+
+
+    /* Test config reading*/
+
+    import com.typesafe.config.ConfigFactory
+
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    println(path) // prints my-app
 
 
   }

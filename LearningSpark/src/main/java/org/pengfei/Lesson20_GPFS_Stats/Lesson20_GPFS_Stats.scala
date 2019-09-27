@@ -3,6 +3,7 @@ package org.pengfei.Lesson20_GPFS_Stats
 import java.sql.Timestamp
 import java.time._
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
@@ -10,6 +11,8 @@ import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 object Lesson20_GPFS_Stats {
+
+
 
   def main(args:Array[String]):Unit={
     Logger.getLogger("org").setLevel(Level.OFF)
@@ -33,7 +36,10 @@ object Lesson20_GPFS_Stats {
 
       /* In this lesson, we will learn how to use spark sql to analyse the statistic of a file system metric. The data
       * is the extraction (first 30000 lines) from a real file system. */
-    val inputFile="/DATA/data_set/spark/basics/Lesson20_GPFS_Stats/gpfs_stats_sample.fist"
+      val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val inputFile=s"${path}/spark_lessons/Lesson20_GPFS_Stats/gpfs_stats_sample.fist"
+
 
     val schema = StructType(Array(
       StructField("Blocks", LongType, true),
