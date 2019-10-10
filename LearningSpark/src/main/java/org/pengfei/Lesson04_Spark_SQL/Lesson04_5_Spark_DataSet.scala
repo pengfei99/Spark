@@ -2,6 +2,7 @@ package org.pengfei.Lesson04_Spark_SQL
 
 import java.util.Properties
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{Encoders, Row, SaveMode, SparkSession}
 import org.apache.spark.sql.types._
@@ -60,7 +61,7 @@ object Lesson04_5_Spark_DataSet {
      * - Tables in Hive
      * */
 
-    // DSCreationOperation(spark)
+     // DSCreationOperation(spark)
 
 
     /******************************4.5.3 Processing Data with dataset API(Transformation)**************************/
@@ -102,7 +103,7 @@ object Lesson04_5_Spark_DataSet {
     *
     * */
 
-  // DSActionOperations(spark)
+   // DSActionOperations(spark)
 
     /********************************* 4.5.5 DataSet to rdd **********************************************/
   // DSRDDOperations(spark)
@@ -111,7 +112,7 @@ object Lesson04_5_Spark_DataSet {
    /*The built-in function examples are in the Lesson4_6 */
 
     /**********************************4.5.7 DataSet output *********************************************/
-   // DSOutputOperations(spark)
+    DSOutputOperations(spark)
 
   }
 
@@ -183,7 +184,9 @@ object Lesson04_5_Spark_DataSet {
     /***********4.5.2.2 Create DataSet with files***************/
     /* */
     /* Read csv with a schema*/
-    val personCSVPath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson04_Spark_SQL/person.csv"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val personCSVPath=s"${path}/spark_lessons/Lesson04_Spark_SQL/person.csv"
     //val personHdfsPath="hdfs://<namenode-ip>:<port>/path/to/file"
     //val personS3Path="s3a://<bucket_name>/path/to/file"
     /* The format option specifies the file format, it can be csv, parquet, orc,JSON
@@ -198,7 +201,7 @@ object Lesson04_5_Spark_DataSet {
     println(s"personDS4 schema is : ${personDS4.schema}")
 
     /* Read csv with column name header, without schema, let the spark read method to infer a schema automaticlly*/
-    val personCSVWithHeadPath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson04_Spark_SQL/person_with_head.csv"
+    val personCSVWithHeadPath=s"${path}/spark_lessons/Lesson04_Spark_SQL/person_with_head.csv"
     val personDS5=spark.read.option("header","true").option("inferSchema","true").csv(personCSVWithHeadPath)
     personDS5.show()
     println(s"personDS5 schema is : ${personDS5.schema}")
@@ -273,7 +276,9 @@ object Lesson04_5_Spark_DataSet {
 
   def DSTransformationOperation(spark:SparkSession):Unit={
     import spark.implicits._
-    val personParquetPath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson04_Spark_SQL/person.parquet"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val personParquetPath=s"${path}/spark_lessons/Lesson04_Spark_SQL/person.parquet"
     val personDS=spark.read.option("header",true).option("inferSchema","true").parquet(personParquetPath)
     personDS.show()
 

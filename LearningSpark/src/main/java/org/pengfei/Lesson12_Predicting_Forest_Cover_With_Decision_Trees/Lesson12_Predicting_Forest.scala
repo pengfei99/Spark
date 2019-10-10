@@ -1,5 +1,6 @@
 package org.pengfei.Lesson12_Predicting_Forest_Cover_With_Decision_Trees
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.{Pipeline, PipelineModel}
 import org.apache.spark.ml.classification.{DecisionTreeClassifier, RandomForestClassifier}
@@ -42,7 +43,9 @@ object Lesson12_Predicting_Forest {
     /* The data file does not have column names in header, it's specified in the covtype.info file
      * Conceptually, each column of a CSV file has a type as well (e.g. number, string) but it's not explicit.
      * We need to define the schema ourself*/
-    val filePath="/DATA/data_set/spark/basics/Lesson12_Predicting_Forest_Cover/covtype.data"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val filePath=s"${path}/spark_lessons/Lesson12_Predicting_Forest_Cover/covtype.data"
     val dataWithoutHeader = spark.read.option("inferSchema", true).option("header",false).csv(filePath)
 
    // dataWithoutHeader.show(5)

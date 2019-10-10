@@ -2,386 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearningSpark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LearningSpark.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_5_Spark_DataSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_5_Spark_DataSet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_6_Spark_SQL_Built_In_Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_6_Spark_SQL_Built_In_Functions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc01_yelp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc01_yelp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc04_Parse_Apache_Access_Log.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc04_Parse_Apache_Access_Log.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Spark_Xml_Parsing.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson19_NLP/Lesson19_Keyword_extraction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson20_GPFS_Stats/Lesson20_GPFS_Stats.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson0_Spark_Core/Lesson0_Spark_Core.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$anonfun$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$typecreator8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$$typecreator8$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2$$anonfun$apply$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$apply$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1$$anonfun$apply$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topDocsInTopConcepts$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$apply$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1$$anonfun$apply$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$$anonfun$topTermsInTopConcepts$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis/Lesson14_Latent_Semantic_Analysis$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson16_Analyzing_Geospatial_Temporal_Data/Lesson16_Analyzing_Geo_Temporal_Data$Trip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4$$anonfun$apply$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$BuildColumnsWithTimePointS2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1$$anonfun$apply$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ChangeColName$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ModifyTimePoint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$ModifyTimePoint$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$RowToColumn$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$countNullValue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$countNullValue$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getColumnNumNameMapping$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getDistinctValueOfColumns$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$getDistinctValueOfColumns$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Analyze_Clinical_Data$$getFiledValue$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Analyze_Clinical_Data$$getFiledValue$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$removeRowsWithSpecValues$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$removeRowsWithSpecValues$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$replaceSpecValue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$anonfun$replaceSpecValue$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator10$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator10$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$$typecreator9$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Analyze_Clinical_Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$14$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$addTextToLines$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$6$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD$client_satisfait$8$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithKeyValuePair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithNumTypes$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/Lesson1_RDDWithNumTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/test$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson1_RDD/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Customer$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Customer$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Transaction$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$Transaction$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$TransactionDetail$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs$TransactionDetail$4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson2_Spark_Jobs_And_Shared_Var/Lesson2_Spark_Jobs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_1_Spark_Shell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_2_Spark_Application$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson3_Spark_Application/Lesson3_2_Spark_Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/CustomArthMean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/GeometricMean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$Person$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro$Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_1_Spark_SQL_Intro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$anonfun$DSTransformationOperation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator17$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator25$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator33$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator41$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator49$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator57$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator65$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator73$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator81$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$$typecreator9$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Customer$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailArrayBody$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailArrayBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailStringBody$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$EmailStringBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Person$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Product$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesByCity$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesByCity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesSummary$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$SalesSummary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Transaction$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet$Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_5_Spark_DataSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$DSCollectionOperations$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$anonfun$DSUDFOperations$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator21$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator25$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator26$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator27$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator38$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator46$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator54$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator62$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator66$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator67$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$$typecreator74$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$Nasdaq$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$Nasdaq.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$NumTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$NumTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$crossTab$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions$crossTab.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_6_Spark_SQL_Built_In_Functions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc01_yelp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc02_UDAF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$$typecreator9$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/Lesson4_Exc03_GroupByExamples.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson4_Spark_SQL/MergeListsUDAF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_1_Spark_ML_Intro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_1_Regression_Algo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_1_2_Classification_Algo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_1_Clustering_Algo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_2_Anomaly_Detection_Algo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_3_dimensionality_reduction_Algo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_2_2_3_dimensionality_reduction_Algo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_3_Model_Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_1_MLlib_API_Data_Types.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$11$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$22$$anonfun$apply$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$DecisionTreeExample$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$SVMWithSGDExample$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$$anonfun$generateCircle$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_2_2_MLlib_API_Models.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_1_Spark_ML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$ImdbDS$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1$ImdbDS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_5_3_3_Spark_ML_Exo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$anonfun$SparkNullExample$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$$typecreator7$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson5_Spark_ML/Lesson5_6_Spark_Extra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$FlumeStreamExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$QueueStreamExampl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$RawSocketStreamExampl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$RawSocketStreamExampl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$$anonfun$linesHash$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_1_Spark_Streaming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$14$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$WordCounts$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$WordCounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$Words$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream$Words.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_3_Processing_Data_Stream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6$$anonfun$apply$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_4_Exo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_1_Spark_Structure_Streaming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator11$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator30$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator37$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator44$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator49$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$$typecreator7$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceData$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceProvider$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$DeviceProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$WordWithTime$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF$WordWithTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_5_Operations_On_Streaming_DF.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator21$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator29$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$$typecreator5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$Message$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$kafkaMessage$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations$kafkaMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/Lesson6_5_6_Structure_Streaming_Kafka_Integrations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson6_Spark_Streaming/SteamingSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$MatchData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$MatchData$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$MatchData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$MatchData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score$$anonfun$$plus$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score$$anonfun$$plus$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_1_record_deduplication$Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$3$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$3$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1$$anonfun$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$anonfun$buildCounts$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator16$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator16$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator8$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$$typecreator9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson11_Spark_Application_Product_Recommendation/Lesson11_Recommendation$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$DecisionTreePipeLine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$DecisionTreePipeLine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$RandomForestModelWithCategorical$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$RandomForestModelWithCategorical$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$RandomForestModelWithCategorical$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$anonfun$RandomForestModelWithCategorical$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$typecreator1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$$typecreator1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson12_Predicting_Forest_Cover_With_Decision_Trees/Lesson12_Predicting_Forest$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9$$anonfun$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$anonfun$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$typecreator8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$$typecreator8$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$1$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$3$$anonfun$apply$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$RowToColumn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$RowToColumn$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$RowToColumn$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$RowToColumn$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Row_To_Column_To_Row$$getFiledValue$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$anonfun$org$pengfei$Lesson17_Analyze_Clinical_Data$Lesson17_Row_To_Column_To_Row$$getFiledValue$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator13$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator14$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator14$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator15$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator15$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator8$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator8$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator9$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$$typecreator9$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/Lesson17_Analyze_Clinical_Data/Lesson17_Row_To_Column_To_Row$.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -451,20 +152,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson14_Spark_Xml_Parsing">
+  <component name="RunManager" selected="Application.Lesson04_Exc04_Parse_Apache_Access_Log">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson14_Latent_Semantic_Analysis" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.Lesson14_Latent_Semantic_Analysis" />
+    <configuration name="Lesson04_5_Spark_DataSet" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_5_Spark_DataSet" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -472,13 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson14_Spark_Xml_Parsing" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.Lesson14_Spark_Xml_Parsing" />
+    <configuration name="Lesson04_6_Spark_SQL_Built_In_Functions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_6_Spark_SQL_Built_In_Functions" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson14_Understanding_Wiki_With_Latent_Semantic_Analysis.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -486,13 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson16_Analyzing_Geo_Temporal_Data" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson16_Analyzing_Geospatial_Temporal_Data.Lesson16_Analyzing_Geo_Temporal_Data" />
+    <configuration name="Lesson04_Exc01_yelp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_Exc01_yelp" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson16_Analyzing_Geospatial_Temporal_Data.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -500,13 +201,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson17_Analyze_Clinical_Data" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson17_Analyze_Clinical_Data.Lesson17_Analyze_Clinical_Data" />
+    <configuration name="Lesson04_Exc04_Parse_Apache_Access_Log" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_Exc04_Parse_Apache_Access_Log" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson17_Analyze_Clinical_Data.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -514,13 +215,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson19_Keyword_extraction" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson19_NLP.Lesson19_Keyword_extraction" />
+    <configuration name="Lesson11_Recommendation" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson11_Spark_Application_Product_Recommendation.Lesson11_Recommendation" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson19_NLP.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson11_Spark_Application_Product_Recommendation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -560,19 +261,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lesson19_Keyword_extraction" />
-      <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
-      <item itemvalue="Application.Lesson16_Analyzing_Geo_Temporal_Data" />
-      <item itemvalue="Application.Lesson14_Latent_Semantic_Analysis" />
-      <item itemvalue="Application.Lesson14_Spark_Xml_Parsing" />
+      <item itemvalue="Application.Lesson11_Recommendation" />
+      <item itemvalue="Application.Lesson04_5_Spark_DataSet" />
+      <item itemvalue="Application.Lesson04_6_Spark_SQL_Built_In_Functions" />
+      <item itemvalue="Application.Lesson04_Exc01_yelp" />
+      <item itemvalue="Application.Lesson04_Exc04_Parse_Apache_Access_Log" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lesson14_Spark_Xml_Parsing" />
-        <item itemvalue="Application.Lesson14_Latent_Semantic_Analysis" />
-        <item itemvalue="Application.Lesson16_Analyzing_Geo_Temporal_Data" />
-        <item itemvalue="Application.Lesson17_Analyze_Clinical_Data" />
-        <item itemvalue="Application.Lesson19_Keyword_extraction" />
+        <item itemvalue="Application.Lesson04_Exc04_Parse_Apache_Access_Log" />
+        <item itemvalue="Application.Lesson04_Exc01_yelp" />
+        <item itemvalue="Application.Lesson04_6_Spark_SQL_Built_In_Functions" />
+        <item itemvalue="Application.Lesson04_5_Spark_DataSet" />
+        <item itemvalue="Application.Lesson11_Recommendation" />
       </list>
     </recent_temporary>
   </component>
@@ -705,6 +406,7 @@
       <workItem from="1568710839441" duration="1091000" />
       <workItem from="1569590256274" duration="592000" />
       <workItem from="1569590863275" duration="5536000" />
+      <workItem from="1570709180658" duration="2112000" />
     </task>
     <servers />
   </component>

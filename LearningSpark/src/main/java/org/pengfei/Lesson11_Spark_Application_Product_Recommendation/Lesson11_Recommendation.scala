@@ -1,10 +1,12 @@
 package org.pengfei.Lesson11_Spark_Application_Product_Recommendation
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
 import org.apache.spark.sql.functions._
 import org.apache.spark.ml.recommendation._
+
 import scala.util.Random
 
 object Lesson11_Recommendation {
@@ -100,8 +102,12 @@ object Lesson11_Recommendation {
     /************************************** 11.3 Preparing the data ***********************************************/
 
     import spark.implicits._
-    val userArtistFilePath="/DATA/data_set/spark/basics/Lesson11_Recommendation/profiledata_06-May-2005/user_artist_data_small.txt"
 
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val userArtistFilePath=s"${path}/spark_lessons/Lesson11_Recommendation/profiledata_06-May-2005/user_artist_data_small.txt"
+    val artistFilePath=s"${path}/spark_lessons/Lesson11_Recommendation/profiledata_06-May-2005/artist_data.txt"
+    val artistAliasPath=s"${path}/spark_lessons/Lesson11_Recommendation/profiledata_06-May-2005/artist_alias.txt"
     val rawUserArtist:Dataset[String]=spark.read.textFile(userArtistFilePath)
 
     // rawData.show(5)
@@ -125,7 +131,7 @@ object Lesson11_Recommendation {
 * The above stats tells us the max and min id of user and artist. The artist name and id corresponding
 * table is in artist_data.txt */
 
-    val artistFilePath="/DATA/data_set/spark/basics/Lesson11_Recommendation/profiledata_06-May-2005/artist_data.txt"
+
 
     val rawArtist=spark.read.textFile(artistFilePath)
     // rawArtist.show(5)
@@ -176,7 +182,7 @@ object Lesson11_Recommendation {
     * entries. It will be useful to collect it as a Map, mapping “bad” artist IDs to “good” ones, instead of just
     * using it as a data set of pairs of artist IDs. Again, some lines are missing the first artist ID for some reason,
     * and are skipped: */
-    val artistAliasPath="/DATA/data_set/spark/basics/Lesson11_Recommendation/profiledata_06-May-2005/artist_alias.txt"
+
     val artistAliasRaw=spark.read.textFile(artistAliasPath)
     artistAliasRaw.show(5)
     val artistAlias=artistAliasRaw.flatMap{line=>

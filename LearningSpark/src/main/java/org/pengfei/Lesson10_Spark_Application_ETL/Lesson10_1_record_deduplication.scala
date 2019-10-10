@@ -1,5 +1,6 @@
 package org.pengfei.Lesson10_Spark_Application_ETL
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -71,7 +72,9 @@ object Lesson10_1_record_deduplication {
     Logger.getLogger("akka").setLevel(Level.OFF)
     val spark=SparkSession.builder().master("local[2]").appName("Lesson10_Spark_Application_ETL").getOrCreate()
 
-    val filePath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson10_Spark_Application_ETL/hospital_data"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val filePath=s"${path}/spark_lessons/Lesson10_Spark_Application_ETL/hospital_data"
     val block1Name="/block_1.csv"
 /* One example line of the csv file : 39086,47614,1,?,1,?,1,1,1,1,1,TRUE, ? means nullValue, in the following spark
 * read, in option, we specify this. */

@@ -1,12 +1,14 @@
 package org.pengfei.Lesson13_Anomaly_Detection
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.{Pipeline, PipelineModel}
 import org.apache.spark.ml.clustering.{KMeans, KMeansModel}
 import org.apache.spark.ml.feature._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
-import org.apache.spark.ml.linalg.{Vectors,Vector}
+import org.apache.spark.ml.linalg.{Vector, Vectors}
+
 import scala.util.Random
 
 /*
@@ -150,7 +152,9 @@ object Lesson13_Anomaly_Detection {
     val spark=SparkSession.builder().appName("Lesson13_Anomaly_Detection").master("local[2]").getOrCreate()
     import spark.implicits._
 
-    val filePath="/DATA/data_set/spark/basics/Lesson13_Anomaly_Detection/kddcup.data"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val filePath=s"${path}/spark_lessons/Lesson13_Anomaly_Detection/kddcup.data"
 
     val rawWithoutHeader=spark.read.option("inferSchema","true").option("header","false").csv(filePath)
 
@@ -181,7 +185,7 @@ object Lesson13_Anomaly_Detection {
       * ********************************************* 13.6 First take on Clustering *******************************
       * ************************************************************************************************************/
 
-   // FirstTakeOnClustering(data)
+    FirstTakeOnClustering(data)
 
     /************************************************************************************************************
       * ************************************************13.7 Choosing K ******************************************

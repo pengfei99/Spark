@@ -1,5 +1,6 @@
 package org.pengfei.Lesson04_Spark_SQL
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 
@@ -9,7 +10,9 @@ def main(args:Array[String])={
   Logger.getLogger("akka").setLevel(Level.OFF)
 
   /*In this exc01, I will use a yelp data set to illustrate how to do data analytics with spark*/
-  val filePath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson04_Spark_SQL/yelp_academic_dataset_business.json"
+  val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+  val  path= sparkConfig.getString("sourceDataPath")
+  val filePath=s"${path}/spark_lessons/Lesson04_Spark_SQL/yelp_academic_dataset_business.json"
   val spark=SparkSession.builder().master("local[2]").appName("Lesson4_Exc01_yelp").getOrCreate()
 
   val df=spark.read.option("inferSchema","true").json(filePath)

@@ -1,5 +1,6 @@
 package org.pengfei.Lesson04_Spark_SQL
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
@@ -12,7 +13,9 @@ object Lesson04_Exc04_Parse_Apache_Access_Log {
     val spark = SparkSession.builder().master("local[2]").appName("Lesson4_Exec04_Parse_Apache_Access_Log").getOrCreate()
 
     import spark.implicits._
-    val filePath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson04_Spark_SQL/access.log.2"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val filePath=s"${path}/spark_lessons/Lesson04_Spark_SQL/access.log.2"
     // Read raw data
     val rawDf=spark.read.text(filePath)
 

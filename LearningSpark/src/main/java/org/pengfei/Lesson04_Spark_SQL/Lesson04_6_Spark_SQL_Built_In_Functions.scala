@@ -35,15 +35,15 @@ object Lesson04_6_Spark_SQL_Built_In_Functions {
        * */
 
     /**************************************4.5.6.1 Aggregate functions **********************************/
-   DSAggOperations(spark)
+   // DSAggOperations(spark)
 
     /**************************************4.5.6.2 Collection functions **********************************/
 
-   //DSCollectionOperations(spark)
+   // DSCollectionOperations(spark)
 
     /**************************************4.5.6.3 Date/time functions **********************************/
 
-    //DSDateTimeOperations(spark)
+    // DSDateTimeOperations(spark)
 
     /**************************************4.5.6.4 Math functions **********************************/
 

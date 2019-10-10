@@ -1,5 +1,6 @@
 package org.pengfei.Lesson17_Analyze_Clinical_Data
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.{DataFrame, Dataset, SaveMode, SparkSession}
 import org.apache.spark.broadcast.Broadcast
@@ -39,7 +40,9 @@ object Lesson17_Row_To_Column_To_Row {
       .option("mapreduce.fileoutputcommitter.marksuccessfuljobs","false") //Avoid creating of job success files
       .csv(outputPath+"/row_to_Column")*/
 
-    val statsFilePath = "/DATA/data_set/spark/basics/Lesson17_Analyse_Clinical_Data/row_to_Column/stats.csv"
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val  path= sparkConfig.getString("sourceDataPath")
+    val statsFilePath = s"${path}/spark_lessons/Lesson17_Analyse_Clinical_Data/row_to_Column/stats.csv"
     val stats = spark.read.option("header", "true").option("nullValue", "?").option("inferSchema", "true").csv(statsFilePath)
     stats.show(5)
     //stats.printSchema()
