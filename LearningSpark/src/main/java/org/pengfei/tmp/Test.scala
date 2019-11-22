@@ -3,6 +3,7 @@ package org.pengfei.tmp
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.{BooleanType, IntegerType, StringType, StructField, StructType}
 import org.pengfei.Lesson04_Spark_SQL.MergeListsUDAF
 
 object Test {
@@ -10,60 +11,53 @@ object Test {
   def main(args:Array[String]):Unit={
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
-   // val spark=SparkSession.builder().appName("Test").master("local[2]").getOrCreate()
-   // import spark.implicits._
+   val spark=SparkSession.builder().appName("Test").master("local[2]").getOrCreate()
+    import spark.implicits._
 
-   /* val clusterLabels=spark.sparkContext.parallelize(Array((0,"normal"),(0,"normal"),(0,"back"),(1,"neptune"),(1,"satan"),(1,"nep"))).toDF("cluster","label").as[(Int,String)]
-
-    spark.udf.register("labelCount",(label:String)=>labelCount(label))
-   val trans=clusterLabels.withColumn("labelWithCount",expr("labelCount(label)"))
-    val groupedClusterLabels=trans.groupBy("cluster").agg(collect_list("labelWithCount").as("labels"))
-
-    groupedClusterLabels.show()*/
-
-    /*
-    val weightedClusterEntropy=groupedClusterLabels.map{
-
-      rows=>
-        /*val labelSize=rows.labels.s
-        val labelCounts=labels.*/
-        println(s"${rows.mkString(";")}")
-    }
-    */
-
-    /*
-     clusterLabels.show()
-     spark.udf.register("combineTwo",(cluster:Int,label:String)=>combineTwoColumn(cluster,label))
-     val keyValue=clusterLabels.withColumn("clusterLabels",expr("combineTwo(cluster,label)")).select("clusterLabels")
-     keyValue.show()
-
-     val weightedClusterEntropy=clusterLabels.groupByKey{
-       case(cluster,_)=> cluster
-     }.mapGroups { case (_, clusterLabels) =>
-
-       val labels = clusterLabels.map { case (_, label) => label }.toSeq
-       println(s"${labels.toString}")
-       val labelCounts = labels.groupBy(identity).values.map(_.size)
-       val labelSize=labels.size
-       println(s"labelCounts: ${labelCounts}")
-       println(s"labelSize : ${labelSize}")
-       labelSize * entropy(labelCounts)
-     }.collect()*/
-
-    /*mapGroups{case (_,clusterLabels)=>
-        val labels = clusterLabels.map{case(_, label)=>label}.toSeq
-    }*/
-    //println(s"${weightedClusterEntropy.toArray.mkString(";")}")
+    val chantier_201_filePath="/home/pliu/Documents/Projects/Hyperthesaux/Sample_Data/Bibracte/Extraction_BDB/export_bdB_10_09_2019/201chantier.csv"
+    val chantier_201_Schema = StructType(Array(
+      StructField("annees_de_fonctionne", StringType, true),
+      StructField("auteur_saisie", StringType, true),
+      StructField("chantier", IntegerType, true),
+      StructField("code_OA", IntegerType, true),
+      StructField("commentaire", StringType, true),
+      StructField("commentaire_chantier", StringType, true),
+      StructField("compteur", StringType, true),
+      StructField("date_derniere_modif", StringType, true),
+      StructField("date_saisie", StringType, true),
+      StructField("lieu_dit_adresse", StringType, true),
+      StructField("localisation_cadastral", IntegerType, true),
+      StructField("nom_chantier", StringType, true),
+      StructField("nom_commune", StringType, true),
+      StructField("nom_departement", StringType, true),
+      StructField("numero_INSEE_comm", IntegerType, true),
+      StructField("proprietaire", StringType, true),
+      StructField("proprietaire unique", StringType, true),
+      StructField("tampon_1", StringType, true),
+      StructField("total_fiche_trouvee", IntegerType, true),
+      StructField("xcentroide", IntegerType, true),
+      StructField("xmax", IntegerType, true),
+      StructField("xmin", IntegerType, true),
+      StructField("ycentroide", IntegerType, true),
+      StructField("ymax", IntegerType, true),
+      StructField("ymin", IntegerType, true)))
 
 
-    /* Test config reading*/
+    val chantierDF = spark.read.format("com.databricks.spark.csv").option("header", "false").schema(chantier_201_Schema).load(chantier_201_filePath)
 
-    import com.typesafe.config.ConfigFactory
+    chantierDF.show(5,false)
 
-    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
-    val  path= sparkConfig.getString("sourceDataPath")
-    println(path) // prints my-app
+    val beuvrayDF=chantierDF.filter(col("nom_chantier").contains("Mont Beuvray"))
 
+    beuvrayDF.show(15)
+
+    chantierDF.select("auteur_saisie").distinct().show(10);
+
+    val rapDf=chantierDF.filter(col("auteur_saisie")===("Raphaël Moreau"))
+
+rapDf.show(5)
+
+    val userEnterCount=chantierDF.groupBy("auteur_saisie").count().orderBy(col("count").desc).show()
 
   }
 
