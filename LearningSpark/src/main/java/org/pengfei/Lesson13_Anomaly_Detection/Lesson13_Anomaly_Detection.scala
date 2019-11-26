@@ -267,19 +267,27 @@ object Lesson13_Anomaly_Detection {
     *
     * We can normalize each feature by converting it to a standard score. This means subtracting the mean of the
     * feature's values from each value, and dividing by the standard deviation, as shown in the standard score
-    * equation: normalized_i=feature_i-m1/d1
+    * equation: X_t = (X - X.mean)/X.std. For more info about "unit standard deviation", check my wiki page
+    * pengfei.liu:data_science:statistic:glossary#unit_standard_deviation
     *
     * In fact, subtracting means has no effect on the clustering because the subtraction effectively shifts all the
-    * data points by the same amount in the same directions. This does not affect interpoint Euclidean distances.
+    * data points by the same amount in the same directions. This does not affect inter-point Euclidean distances.
     *
-    * ML and MLlib both provide StandardScaler, a component that can perform this kind of standardizaiton and be easily added to
-     * the pipeline.*/
+    * ML and MLlib both provide StandardScaler, a component that can perform this kind of standardization and be easily
+    * added to the pipeline.*/
 
-    // calculate mean distance for each k with better choosen starting point and feature normalization
+    /*
+    * withStd: True by default. Scales the data to unit standard deviation.
+    * withMean: False by default. Centers the data with mean before scaling. It will build a dense output, so take
+    *           care when applying to sparse input.
+    * */
+
+
+    // calculate mean distance for each k with better choose starting point and feature normalization
    // (20 to 100 by 20).map(k=> (k,ClusteringScoreWithFeatureNormalization(data,k))).foreach(println)
 
     /*
-    *  (20,7.412644144009894)
+    * (20,7.412644144009894)
     * (40,2.5915895471974357)
     * (60,1.153548902077912)
     * (80,0.818219598187268)
@@ -505,7 +513,7 @@ def ClusteringScoreForDifferentK(data:DataFrame,k:Int):Double={
     val DataWithOnlyNumericFeature=data.drop(nonNumericFeature:_*)
     val numericFeatureCol=DataWithOnlyNumericFeature.columns.filter(_ !="label")
     val assembler = new VectorAssembler().setInputCols(numericFeatureCol).setOutputCol("featureVector")
-    //Feature normalization
+    //the scaler normalize each feature to have unit standard deviation.
     val scaler = new StandardScaler()
       .setInputCol("featureVector")
       .setOutputCol("scaledFeatureVector")
@@ -529,6 +537,11 @@ def ClusteringScoreForDifferentK(data:DataFrame,k:Int):Double={
 
   /****************************** 13.10 One hot code Categorical Feature *****************************/
 
+  /** Creates a pipeline which transform string categorical column into one hot encoded vector column
+    *
+    *  @param inputCol input column name
+    *  @return return the generated pipeline and name of the output column
+    */
   def OneHotPipeLine(inputCol:String):(Pipeline,String)={
     /*
     * The StringIndexer will read all possible value of a categorical value in a dataset, and encoded with numeric

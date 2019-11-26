@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc04_Parse_Apache_Access_Log.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson04_Spark_SQL/Lesson04_Exc04_Parse_Apache_Access_Log.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/tmp/Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/pengfei/tmp/Test$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson13_Anomaly_Detection/Lesson13_Anomaly_Detection.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -335,7 +330,8 @@
       <workItem from="1570709180658" duration="2783000" />
       <workItem from="1571748345175" duration="2075000" />
       <workItem from="1573567912122" duration="5115000" />
-      <workItem from="1574329808756" duration="8796000" />
+      <workItem from="1574329808756" duration="9549000" />
+      <workItem from="1574760983020" duration="2412000" />
     </task>
     <servers />
   </component>
