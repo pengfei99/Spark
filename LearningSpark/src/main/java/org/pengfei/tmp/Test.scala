@@ -1,10 +1,14 @@
 package org.pengfei.tmp
 
+import java.util
+
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{BooleanType, IntegerType, StringType, StructField, StructType}
 import org.pengfei.Lesson04_Spark_SQL.MergeListsUDAF
+
+import scala.collection.mutable
 
 object Test {
 
@@ -59,8 +63,9 @@ rapDf.show(5)
 
     val userEnterCount=chantierDF.groupBy("auteur_saisie").count().orderBy(col("count").desc).show()
 
+    val countNull=chantierDF.select("nom_chantier").filter(col("nom_chantier").isNull).count()
+    println
   }
-
 
 
 
