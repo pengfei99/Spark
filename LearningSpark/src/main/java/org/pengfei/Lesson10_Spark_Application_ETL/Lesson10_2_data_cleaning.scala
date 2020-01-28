@@ -2,7 +2,7 @@ package org.pengfei.Lesson10_Spark_Application_ETL
 
 import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructField, StructType}
 
@@ -97,8 +97,14 @@ object Lesson10_2_data_cleaning {
     val badValues=getIsNotDigitCount(isDigitDf)
     badValues.show()
 
-    /* based on the output of badValues, we can determine column Year and Income contains*/
+    /* based on the output of badValues, we can determine column Year and Income contains bad values, and
+    * we can use showNotDigitValues function to get the distinct bad values*/
     showNotDigitValues(isDigitDf,List("Year","Income"))
+
+    /*
+    * We can also get a data frame which contains*/
+    val badValueFullLines=showLinesWithBadValue(isDigitDf)
+    badValueFullLines.show(5,false)
 
   }
 
@@ -267,6 +273,33 @@ object Lesson10_2_data_cleaning {
      val badValues= df.filter(col(s"${colName}_isDigit")===false).select(colName).distinct()
      badValues.show(badValues.count().toInt,false)
     }
+  }
+
+  /**
+    * This function takes a data frame produced by getIsDigitDF, it returns a new data frame which contains only the
+    * lines with bad values(String value in a digit column).
+    *
+    * @author Pengfei liu
+    * @version 1.0
+    * @since 2020-01-27
+    * @param df source data frame
+    * @return DataFrame
+    **/
+  def showLinesWithBadValue(df:DataFrame):DataFrame={
+    val spark=df.sparkSession
+     // get column names as an Array
+    val colNames=df.columns.toArray
+    // get schema of the data frame
+    val schema=df.schema
+    // to create an empty data frame with a specific schema, we need to use the sparkContext to create an empty RDD
+    val sc=spark.sparkContext
+    var result:DataFrame=spark.createDataFrame(sc.emptyRDD[Row], schema)
+    for(colName<-colNames){
+      if(colName.contains("_isDigit")){
+        result=result.union(df.filter(col(colName)===false))
+      }
+    }
+    return result
   }
 
   /** **************************************************************************************************************
