@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fd59f684-26ce-4d60-8e22-e69605696170" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_0_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_chill_java_0_8_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_parquet_hadoop_bundle_1_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_univocity_univocity_parsers_2_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_airlift_aircompressor_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javolution_javolution_5_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_apache_log4j_extras_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_hydromatic_eigenbase_properties_1_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_format_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_memory_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_arrow_arrow_vector_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_avatica_1_2_0_incubating.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_core_1_2_0_incubating.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_calcite_calcite_linq4j_1_2_0_incubating.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_12_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_11_0_8_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_core_nohive_1_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_orc_orc_mapreduce_nohive_1_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_hive_2_11_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_kafka_2_11_1_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_janino_janino_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_2_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_datanucleus_datanucleus_rdbms_3_2_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_iq80_snappy_snappy_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jodd_jodd_core_3_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_hive_hive_exec_1_2_1_spark2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spark_project_hive_hive_metastore_1_2_1_spark2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_2_data_cleaning.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson10_Spark_Application_ETL/Lesson10_2_data_cleaning.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearningSpark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LearningSpark.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson00_Spark_Core/Lesson00_Spark_Core.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson00_Spark_Core/Lesson00_Spark_Basic_Concept.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson01_RDD/Lesson01_RDD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pengfei/Lesson01_RDD/Lesson01_RDD_Basics.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +147,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565190821290" />
@@ -54,6 +159,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="scala_project_settings_configurable.last_selected_tab_index" value="7" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -65,20 +172,20 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/pengfei/tmp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lesson10_2_data_cleaning">
+  <component name="RunManager" selected="Application.Lesson00_Spark_Core">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson04_6_Spark_SQL_Built_In_Functions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_6_Spark_SQL_Built_In_Functions" />
+    <configuration name="Lesson00_Spark_Core" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson00_Spark_Core.Lesson00_Spark_Basic_Concept" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson00_Spark_Core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,13 +193,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson04_Exc01_yelp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson04_Spark_SQL.Lesson04_Exc01_yelp" />
+    <configuration name="Lesson01_RDD" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pengfei.Lesson01_RDD.Lesson01_RDD_Basics" />
       <module name="LearningSpark" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.pengfei.Lesson04_Spark_SQL.*" />
+          <option name="PATTERN" value="org.pengfei.Lesson01_RDD.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,33 +281,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lesson04_6_Spark_SQL_Built_In_Functions" />
-      <item itemvalue="Application.Lesson04_Exc01_yelp" />
       <item itemvalue="Application.Lesson04_Exc04_Parse_Apache_Access_Log" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Lesson10_2_data_cleaning" />
+      <item itemvalue="Application.Lesson00_Spark_Core" />
+      <item itemvalue="Application.Lesson01_RDD" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lesson00_Spark_Core" />
+        <item itemvalue="Application.Lesson01_RDD" />
         <item itemvalue="Application.Lesson10_2_data_cleaning" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Lesson04_Exc04_Parse_Apache_Access_Log" />
-        <item itemvalue="Application.Lesson04_Exc01_yelp" />
-        <item itemvalue="Application.Lesson04_6_Spark_SQL_Built_In_Functions" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -339,6 +434,11 @@
       <workItem from="1575023647104" duration="17000" />
       <workItem from="1579792445570" duration="2965000" />
       <workItem from="1580112281916" duration="20130000" />
+      <workItem from="1591091329574" duration="1522000" />
+      <workItem from="1591172388697" duration="235000" />
+      <workItem from="1592989494168" duration="328000" />
+      <workItem from="1592989929786" duration="1356000" />
+      <workItem from="1592994331160" duration="8611000" />
     </task>
     <servers />
   </component>
@@ -359,147 +459,69 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="693" y="295" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580120105959">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="443" y="32" width="1024" height="852" key="#Project_Structure" timestamp="1591092219960">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state x="693" y="295" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1580120105959" />
-    <state width="1872" height="169" key="GridCell.Tab.0.bottom" timestamp="1580202080685">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="443" y="32" width="1024" height="852" key="#Project_Structure/0.0.1920.909@0.0.1920.909" timestamp="1591092219960" />
+    <state x="693" y="212" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593001761241">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="169" key="GridCell.Tab.0.bottom/0.28.1920.1018@0.28.1920.1018" timestamp="1580202080685" />
-    <state width="1872" height="169" key="GridCell.Tab.0.center" timestamp="1580202080684">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="693" y="212" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.909@0.0.1920.909" timestamp="1593001761241" />
+    <state x="669" y="101" width="572" height="713" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1592994354874">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="169" key="GridCell.Tab.0.center/0.28.1920.1018@0.28.1920.1018" timestamp="1580202080684" />
-    <state width="1872" height="169" key="GridCell.Tab.0.left" timestamp="1580202080683">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="669" y="101" width="572" height="713" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.909@0.0.1920.909" timestamp="1592994354874" />
+    <state x="895" y="60" width="519" height="810" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1592995782127">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="169" key="GridCell.Tab.0.left/0.28.1920.1018@0.28.1920.1018" timestamp="1580202080683" />
-    <state width="1872" height="169" key="GridCell.Tab.0.right" timestamp="1580202080684">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="895" y="60" width="519" height="810" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.909@0.0.1920.909" timestamp="1592995782127" />
+    <state x="643" y="189" width="624" height="537" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592989809957">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="169" key="GridCell.Tab.0.right/0.28.1920.1018@0.28.1920.1018" timestamp="1580202080684" />
-    <state width="1872" height="315" key="GridCell.Tab.1.bottom" timestamp="1580201222530">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="643" y="189" width="624" height="537" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.909@0.0.1920.909" timestamp="1592989809957" />
+    <state x="897" y="216" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1592995785704">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="315" key="GridCell.Tab.1.bottom/0.28.1920.1018@0.28.1920.1018" timestamp="1580201222530" />
-    <state width="1872" height="315" key="GridCell.Tab.1.center" timestamp="1580201222530">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="897" y="216" width="524" height="491" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.909@0.0.1920.909" timestamp="1592995785704" />
+    <state x="738" y="216" width="595" height="498" key="FileChooserDialogImpl" timestamp="1592995779352">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="315" key="GridCell.Tab.1.center/0.28.1920.1018@0.28.1920.1018" timestamp="1580201222530" />
-    <state width="1872" height="315" key="GridCell.Tab.1.left" timestamp="1580201222530">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state x="738" y="216" width="595" height="498" key="FileChooserDialogImpl/0.0.1920.909@0.0.1920.909" timestamp="1592995779352" />
+    <state width="1872" height="227" key="GridCell.Tab.0.bottom" timestamp="1592995858493">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="315" key="GridCell.Tab.1.left/0.28.1920.1018@0.28.1920.1018" timestamp="1580201222530" />
-    <state width="1872" height="315" key="GridCell.Tab.1.right" timestamp="1580201222530">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state width="1872" height="227" key="GridCell.Tab.0.bottom/0.0.1920.909@0.0.1920.909" timestamp="1592995858493" />
+    <state width="1872" height="227" key="GridCell.Tab.0.center" timestamp="1592995858491">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state width="1872" height="315" key="GridCell.Tab.1.right/0.28.1920.1018@0.28.1920.1018" timestamp="1580201222530" />
-    <state x="626" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1580113005661">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state width="1872" height="227" key="GridCell.Tab.0.center/0.0.1920.909@0.0.1920.909" timestamp="1592995858491" />
+    <state width="1872" height="227" key="GridCell.Tab.0.left" timestamp="1592995858490">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state x="626" y="364" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1580113005661" />
-    <state x="612" y="253" width="901" height="568" key="find.popup" timestamp="1580118885672">
-      <screen x="0" y="28" width="1920" height="1018" />
+    <state width="1872" height="227" key="GridCell.Tab.0.left/0.0.1920.909@0.0.1920.909" timestamp="1592995858490" />
+    <state width="1872" height="227" key="GridCell.Tab.0.right" timestamp="1592995858492">
+      <screen x="0" y="0" width="1920" height="909" />
     </state>
-    <state x="612" y="253" width="901" height="568" key="find.popup/0.28.1920.1018@0.28.1920.1018" timestamp="1580118885672" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.11.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>LearningSpark</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state width="1872" height="227" key="GridCell.Tab.0.right/0.0.1920.909@0.0.1920.909" timestamp="1592995858492" />
+    <state x="443" y="32" width="1443" height="852" key="SettingsEditor" timestamp="1592995793714">
+      <screen x="0" y="0" width="1920" height="909" />
+    </state>
+    <state x="443" y="32" width="1443" height="852" key="SettingsEditor/0.0.1920.909@0.0.1920.909" timestamp="1592995793714" />
+    <state x="488" y="107" width="934" height="702" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592995121800">
+      <screen x="0" y="0" width="1920" height="909" />
+    </state>
+    <state x="488" y="107" width="934" height="702" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.909@0.0.1920.909" timestamp="1592995121800" />
+    <state x="282" y="156" width="1345" height="603" key="new project wizard" timestamp="1592993933362">
+      <screen x="0" y="0" width="1920" height="909" />
+    </state>
+    <state x="282" y="156" width="1345" height="603" key="new project wizard/0.0.1920.909@0.0.1920.909" timestamp="1592993933362" />
   </component>
 </project>

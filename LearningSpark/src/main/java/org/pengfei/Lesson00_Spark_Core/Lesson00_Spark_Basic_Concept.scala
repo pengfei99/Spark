@@ -3,7 +3,7 @@ package org.pengfei.Lesson00_Spark_Core
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 
-object Lesson00_Spark_Core {
+object Lesson00_Spark_Basic_Concept {
 
   /*********************************************************************************************
     * *****************************0. Spark introduction ***************************************
@@ -59,43 +59,8 @@ object Lesson00_Spark_Core {
   *       a new stage.
 */
 
-  /* How an Spark Applications works?
-
-* With the definitions out of the way, I can now describe how a Spark application processes data in parallel across a
-* cluster of nodes. When a Spark application is run, Spark connects to a cluster manager and acquires executors on the
-* worker nodes. As mentioned earlier, a Spark application submits a data processing algorithm as a job. Spark splits
-* a job into a directed acyclic graph (DAG) of stages. It then schedules the execution of these stages on the executors
-* using a low-level scheduler provided by a cluster manager. The executors run the tasks submitted by Spark in parallel.
-*
-* Every Spark application gets its own set of executors on the worker nodes. This design provides a few benefits.
-* First, tasks from different applications are isolated from each other since they run in different JVM processes.
-* A misbehaving task from one application cannot crash another Spark application. Second, scheduling of tasks becomes
-* easier. Spark has to schedule the tasks belonging to only one application at a time.
-*
-* It does not have to handle the complexities of scheduling tasks from multiple concurrently running applications.
-* However, this design also has one disadvantage. Since applications run in separate JVM processes, they cannot easily
-* share data. Even though they may be running on the same worker nodes, they cannot share data without writing it to
-* disk. As previously mentioned, writing and reading data from disk are expensive operations. Therefore, applications
-* sharing data through disk will experience performance issues.
-*/
-
-/*Spark API
-
-* Spark makes its cluster computing capabilities available to an application in the form of a library. This
-* library is written in Scala, but it provides an application programming interface (API) in multiple languages.
-*
-* At the current time (08-2018), the Spark API is available in Scala, Java, Python, and R. You can develop a Spark
-* application in any of these languages. Unofficial support for additional languages, such as Clojure, is also available.
-*
-* The Spark API consists of two important abstractions: SparkContext and Resilient Distributed Datasets (RDDs).
-  *
-  * SparkContext(SparkSession)
-  * In older version of Spark there was different contexts that was entry points to the different api (sparkcontext for
-  * the core api, sql context for the spark-sql api, streaming context for the Dstream api etc.) this was source of
-  * confusion for the developer and was a point of optimization for the spark team, so in the most recent version of
-  * spark there is only one entry point (the spark session) and from this you can get the various other entry point
-  * (the spark context , the streaming context , etc.)
-  * */
+  /* For more details of spark introduction, please visit my wiki page
+  employes:pengfei.liu:big_data:spark:l01_spark_introduction*/
   def main(args:Array[String]): Unit ={
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)

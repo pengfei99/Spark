@@ -16,7 +16,6 @@
         <corenlp.version>3.4.1</corenlp.version>
     </properties>
 
-
     <dependencies>
     <dependency>
         <groupId>org.apache.spark</groupId>
@@ -32,15 +31,15 @@
     </dependency>
 
     <!--dependencies for spark kafaka-->
-    <dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka_2.11</artifactId>
+            <version>1.6.3</version>
+        </dependency>
 
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-streaming-kafka_${scala.version}</artifactId>
-        <version>1.6.3</version>
-    </dependency>
 
-
-    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-twitter -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-twitter -->
     <dependency>
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-streaming-twitter_2.11</artifactId>
@@ -158,61 +157,55 @@
         </dependency>
 
 
+<!-- hadoop client-->
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
+       <!-- <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>3.2.1</version>
+        </dependency>-->
 
     </dependencies>
 
-    <build>
-        <plugins>
+        <build>
+            <plugins>
 
-            <plugin>
-                <groupId>org.scala-tools</groupId>
-                <artifactId>maven-scala-plugin</artifactId>
-                <version>2.15.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>testCompile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+                <plugin>
+                    <groupId>org.scala-tools</groupId>
+                    <artifactId>maven-scala-plugin</artifactId>
+                    <version>2.15.2</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>compile</goal>
+                                <goal>testCompile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
 
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19</version>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.19</version>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
 
-        </plugins>
-    </build>
-
-
-</project>
+            </plugins>
+        </build>
 
 
-<!--
-
-
-
-
-
-
-
-
-
-
-
--->
+    </project>

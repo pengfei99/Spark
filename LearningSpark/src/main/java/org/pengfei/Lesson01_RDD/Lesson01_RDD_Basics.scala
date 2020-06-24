@@ -1,26 +1,27 @@
 package org.pengfei.Lesson01_RDD
 
+import com.typesafe.config.ConfigFactory
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.storage.StorageLevel
 
-/****************************************************************************************
-  * ************************************Introduction ***********************************
-  * ************************************************************************************
+/** **************************************************************************************
+ * ************************************Introduction ***********************************
+ * ************************************************************************************
+ *
+ * An RDD in spark is simply an immutable distributed collection of objects. Each RDD
+ * is split into multiple partitions, which may be computed on different nodes of the cluster.
+ * RDDs can contain any type of Python, Java or Scala objects, including user-defined
+ * classes.
+ *
+ * Users create RDDs in two ways: by loading an external dataset, or by distributing a
+ * collection of objects (e.g. a list or set) in their driver program.
+ * https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html
+ *
+ * **********************************************************************************/
 
-* An RDD in spark is simply an immutable distributed collection of objects. Each RDD
-is split into multiple partitions, which may be computed on different nodes of the cluster.
-RDDs can contain any type of Python, Java or Scala objects, including user-defined
-classes.
 
-* Users create RDDs in two ways: by loading an external dataset, or by distributing a
-* collection of objects (e.g. a list or set) in their driver program.
-  * https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html
-
-* **********************************************************************************/
-
-
-object Lesson01_RDD {
+object Lesson01_RDD_Basics {
 
 
   def main(args: Array[String]) = {
@@ -28,12 +29,16 @@ object Lesson01_RDD {
     Logger.getLogger("akka").setLevel(Level.OFF)
 
     val spark = SparkSession.builder().
-      master("local[2]"). //spark://10.70.3.48:7077 remote
+      master("local[4]"). //spark://10.70.3.48:7077 remote
       appName("Lesson1_RDD").
       getOrCreate()
     // import sparkSession.implicits._ for all schema conversion magic.
 
-     RddCreationOperation(spark)
+    //get dynamic data path
+    val sparkConfig = ConfigFactory.load("application.conf").getConfig("spark")
+    val path = sparkConfig.getString("sourceDataPath")
+
+    RddCreationOperation(spark, path)
     // RddTransformationOperation(spark)
     // RddActionOperations(spark)
 
@@ -42,129 +47,163 @@ object Lesson01_RDD {
 
     //RddSaveOperation(spark)
     //RddCachingOperations(spark)
-   // RddUdfOperations(spark)
-
+    // RddUdfOperations(spark)
 
 
   }
 
 
-
-  /**************************************************************************************************
-    ********************** 1.1 Creating RDDs  ***********************************************************
-    *************************************************************************************************/
-
-  def RddCreationOperation(spark:SparkSession):Unit={
+  def RddCreationOperation(spark: SparkSession, path: String): Unit = {
+    // get the spark context instance
+    val sc = spark.sparkContext
+    /** ************************************************************************************************
+     * ********************* 1.1 Creating RDDs  ***********************************************************
+     * ************************************************************************************************/
 
     /*
     * Since RDD is an abstract class, you cannot create an instance of the RDD class directly. The SparkContext
     * class provides factory methods to create instances of concrete implementation classes. An RDD can also be
     * created from another RDD by applying a transformation to it. As discussed earlier, RDDs are immutable. Any
-    * operation that modifies an RDD returns a new RDD with the modified data.*/
-    /** ************************** 1.1.1 RDD creation with file******************************************/
-    val readMePath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/README.md"
-    val sc=spark.sparkContext
-    /* The textFile method has a second optional argument (number of partitions), By default, spark
-    * creates one partition for each file block(hdfs file block)*/
-    val lines = sc.textFile(readMePath)
-
-    /*
-    To get RDD from files we need to use sparkConxt
-    The (val data1=spark.read.text(file1).as[String]) spark session will return a dataset with a String column
-    */
-
-    /*
-    * RDDs offers two types of operations : transformations and actions.
-    * Transformations construct a new RDD from a Previous one. For example,
-    * Filter data that matches a predicate.
-    * */
-
-    val linesHasPython=lines.filter(line=>line.contains("python"))
-
-    /*
-    * Actions, compute a result based on an RDD, and either return it to the driver program or save it to an external
-    * storage system (e.g. HDFS). For example, action first() returns the first element of an RDD
-    * */
-    // print(linesHasPython.first())
-
-    /*
-    * Spark script will be executed when the spark drive find the first action.
-    * Spark's RDD are by default recomputed each time you run an action on them. If you would like to reuse an RDD
-    * in multiple actions, you can ask spark to persist it using RDD.persist(). After computing it the first time
-    * Spark will store the RDD contents in memory(patitioned across the machines in your cluster). Persisting RDDs
-    * on disk is also possible.
+    * operation that modifies an RDD returns a new RDD with the modified data.
     *
-    * The behavior of not persisting by default may again seem unusual, but it makes a lot of sense for big
-    * datasets: if you will not reuse the RDD, there’s no reason to waste storage space when
-    * Spark could instead stream through the data once and just compute the result.
+    * There is three main ways to create an RDD:
+    * 1. RDDs creation with in memory collection of objects
+    * 2. RDDs creation with files
+    * 3. RDDs creation with RDD transformation operations
+    *
+    * Spark driver will submit a new job to executor when it encounters action. Spark's RDD are by default recomputed
+    * each time you run an action on them. If you would like to reuse an RDD in multiple actions, you can ask spark
+    * to persist it using RDD.persist(). After computing it the first time Spark will store the RDD contents in
+    *  memory(partitioned across the machines in your cluster). Persisting RDDs on disk is also possible.
+    *
+    * The behavior of not persisting by default may again seem unusual, but it makes a lot of sense for big datasets:
+    * if you will not reuse the RDD, there’s no reason to waste storage space when Spark could instead stream
+    * through the data once and just compute the result.
     * */
-    linesHasPython.persist(StorageLevel.MEMORY_ONLY_SER)
+
     // print(linesHasPython.count())
     // print(linesHasPython.first())
 
     /*
-    * The ability to always recompute an RDD is actually why RDDs are called “resilient”. When a machine holding
+    * The ability to always recompute an RDD is actually why RDDs are called "resilient". When a machine holding
     * RDD data fails, Spark uses this ability to recompute the missing partitions, transparent to the user.
     * */
+    /** 1.1.1 RDDs creation with in memory collection of objects
+     *
+     * The first way to create an RDD is to parallelize an object collection, meaning converting it to a
+     * distributed dataset that can be operated in parallel. This is a great way to get started in learning
+     * Spark because it is simple and doesn’t require any data files.
+     *
+     * Spark context provide two methods:
+     * - parallelize() : It takes a in memory collection and returns an RDD
+     * - makeRDD(): It's a warp method of parallelize(). makeRDD calls parallelize() to create RDDs
+     *
+     * This works for all scala collection types: List, Array, Seq, etc.
+     */
 
-    /** ************************** 1.1.2 RDD creation with wholeTextFiles******************************************/
-    /*
-    * This method reads all text files in a directory and returns an RDD of key-value pairs. Each key-value pair in
-    * the returned RDD corresponds to a single file. The key part stores the path of a file and the value part stores
-    * the content of a file. This method can also read files stored on a local file system, HDFS, Amazon S3, or any
-    * other Hadoop-supported storage system.*/
+    val strCollection1 = List("pandas", "i like pandas")
+    val rddFromMem1 = spark.sparkContext.parallelize(strCollection1)
+    val linesHasPandas = rddFromMem1.filter(line => line.contains("pandas"))
+    print(linesHasPandas.count())
+    print(linesHasPandas.first())
 
-    val allRdd=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/*.txt")
+    val strCollection2 = Array("spark", "i like spark")
+    //numSlices defines the partition number
+    val rddFromMem2 = sc.makeRDD(strCollection2,4)
+    // persist an rdd in memory
+    rddFromMem2.persist(StorageLevel.MEMORY_ONLY_SER)
+
+
+
+    /** 1.1.2 RDD creation with external datasets
+     * Spark can create RDDs from any storage source supported by Hadoop, including your local file system, HDFS,
+     * Cassandra, HBase, Amazon S3, etc. Spark supports text files, SequenceFiles, and any other Hadoop InputFormat.
+     *
+     * Spark context provide several methods to read file and convert it to RDDs.
+     * - textFile(path:String,minPartitions:int): The minPartitions specifies the minimum partition of an RDD
+     *          base on the config of the context, spark can make more. By default, spark creates one partition
+     *          for each hdfs file block
+     * - wholeTextFiles(): This method reads all text files in a directory and returns an RDD of key-value pairs.
+     *          Each key-value pair in the returned RDD corresponds to a single file. The key stores the path
+     *          of a file and the value part stores the content of a file.
+     * - sequenceFile(): The sequenceFile method reads key-value pairs from a sequence file. It returns an RDD of
+     *          key-value pairs. In addition to providing the name of an input file, you have to specify the data
+     *          types for the keys and values as type parameters when you call this method
+     *
+     * textFile vs wholeTextFiles
+     * If we use wildcard path argument in these two methods, they will both read multiple files and return an RDD.
+     * In the RDD returned by textFile, each line in a file will be an element of the rdd. So you can't determine
+     * which line is form which file. wholeTextFile() will return a rdd of type key value pair, key is the file path,
+     * value is the list of lines of the file.
+     *
+     * */
+
+    /** 1.1.2.1 textFile code example */
+
+    val readMeFilePath = s"${path}/spark_lessons/Lesson01_RDD/README.md"
+    val readMeLines = sc.textFile(readMeFilePath,4)
+    val linesHasPython = readMeLines.filter(line => line.contains("python"))
+    print(linesHasPython.first())
+
+
+
+    /** 1.1.2.2 wholeTextFiles code example */
+
+
+    val allRdd = sc.textFile(s"${path}/spark_lessons/Lesson01_RDD/*.txt")
     val allRddFromLessson1 = sc.wholeTextFiles("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/*.txt")
-    /* textFile read multiple files will return a rdd of lines, each line in a file will be an element the rdd
-    *  wholeTextFile will return a rdd of map, key is the file path, value is the list of lines*/
+    /* */
     println(s"rdd with textFile : ${allRdd.collect().toList.toString()}")
     println(s"rdd with wholeTextFile : ${allRddFromLessson1.collect().toMap.toString()}")
 
-    /** ************************** 1.1.3 RDD creation with sequenceFile******************************************/
-/* The sequenceFile method reads key-value pairs from a sequence file stored on a local file system, HDFS, or
-* any other Hadoop-supported storage system. It returns an RDD of key-value pairs. In addition to providing
-* the name of an input file, you have to specify the data types for the keys and values as type parameters when
-* you call this method.*/
+    /** 1.1.2.3 sequenceFile code example */
 
-    //val rdd = sc.sequenceFile[String, String]("some-file")
-    /************************ 1.1.4 RDDs creation with in memory collection of objects *********************************/
-    val stringCollections= List("pandas","i like pandas")
-    val rddLines = spark.sparkContext.parallelize(stringCollections)
-    /****makeRDD is identical to parallelize, because makeRDD also calls paralelize*/
-    val rddLines1 = spark.sparkContext.makeRDD(stringCollections)
-    val linesHasPandas = rddLines.filter(line=>line.contains("pandas"))
-    //print(linesHasPandas.count())
-    //print(linesHasPandas.first())
 
-    /************************ 1.1.5 RDD creation from dataframe *******************************************/
-    /* We can also create rdd from a dataframe, but we rarely need to do this */
-    val df=spark.read.format("csv").option("header","true").load("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/satisfait_client.csv")
+    //val rdd = sc.sequenceFile[String, String]("SequenceFilePath")
+
+
+    /** 1.1.3 RDD creation with transformation
+     * There are many RDD transformation operations which can create new RDDs. I only give two example:
+     * - Exp1: We convert a dataFrame to RDD.
+     * - Exp2: We use a map() operation, which transform an RDD of lines of a file (RDD[String]) to an RDD of class
+     *         clientSatisfied(RDD[clientSatisfied]). Note class client_satisfied is opaque to RDD.
+     */
+
+    /** 1.1.3.1 Exp1: RDD creation from dataframe */
+
+    val satisfiedClientFilePath=s"${path}/spark_lessons/Lesson01_RDD/satisfait_client.data"
+    val df = spark.read.format("csv").option("header", "true").load(satisfiedClientFilePath)
     df.show()
-    val dfToRdd=df.rdd
+    val dfToRdd = df.rdd
     println(s"rdd value : ${dfToRdd.collect().toList.toString}")
 
-    /****************************1.1.6 RDD of user define class *********************************/
-  case class client_satisfait(manager_name:String,  client_name:String, client_gender:String, client_age:Int, response_time:Double, statisfaction_level:Double)
-val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/satisfait_client.data")
-    val satisfait_client = client_sat_lines.map{ l=> {
+    /** 1.1.3.2 Exp2: Transform RDD with map */
+    case class clientSatisfied(manager_name: String, client_name: String, client_gender: String,
+                                 client_age: Int, response_time: Double, statisfaction_level: Double)
+    val client_sat_lines = sc.textFile(satisfiedClientFilePath)
+    val satisfait_client = client_sat_lines.map { l => {
       // isEmpty is a string specific method for null value testing, because ==null does not work in scala
-      if(l.isEmpty){println("This is an empty line")}
+      if (l.isEmpty) {
+        println("This is an empty line")
+      }
       else {
-      val s= l.split(",")
+        val s = l.split(",")
         // s is not an rdd , l is a string, l.split returns an array of String
         // println(s"type of line after split: ${s.getClass.getName}")
-      client_satisfait(s(0),s(1),s(2),s(3).toInt,s(4).toDouble,s(5).toDouble)}
+        clientSatisfied(s(0), s(1), s(2), s(3).toInt, s(4).toDouble, s(5).toDouble)
+      }
     }
     }
+    // Below code is illegal, because class clientSatisfied is opaque for RDD.
+    // satisfait_client.first().manager_name
     println(s" satisfait_client_rdd value is ${satisfait_client.collect().mkString(",")}")
   }
 
-  /************************************************************************************************
-    ************************************** 1.2 RDDs operations : transformation******************
-    * ***************************************************************************************************/
+  /** **********************************************************************************************
+   * ************************************* 1.2 RDDs operations : transformation******************
+   * ***************************************************************************************************/
 
-  def RddTransformationOperation(spark:SparkSession):Unit={
+  def RddTransformationOperation(spark: SparkSession): Unit = {
 
     /*
     * RDDs transformation are all lazy in spark, transformation does not mutate the existing inputRDD. Instead,
@@ -178,165 +217,169 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     * */
 
 
-    /***************************************** Map and MapPartitions*****************************************/
+    /** *************************************** Map and MapPartitions *****************************************/
     /* Map method is a higher-order method that takes a functions as input and applies it to each element
     * in the source RDD to create a new RDD. The input function must take a signle argument and return a
     * signle value */
-    val numRDD=spark.sparkContext.parallelize(List(1,2,3,4))
-    val square=numRDD.map(x=>x*x)
-    println("Square of each element of RDD done by Map: "+square.collect().mkString(","))
+    val numRDD = spark.sparkContext.parallelize(List(1, 2, 3, 4))
+    val square = numRDD.map(x => x * x)
+    println("Square of each element of RDD done by Map: " + square.collect().mkString(","))
 
     /* mapPartitions method allows you to process data at a partition level, Instead of passing one
      * element at a time to its input function, mapPartitions passes a partition in the form of an
      * iterator. The input function to the mapPartitions method takes an iterator as input and returns
      * another iterator as output. The mapPartitions method returns new RDD formed by applying a
      * user-specified function to each partition of the source RDD.*/
-    val squarePartMap=numRDD.mapPartitions(iter=>iter.map{x=>x*x})
-    println("Square of each element of RDD done by MapPartitions: "+squarePartMap.collect().mkString(","))
+    val squarePartMap = numRDD.mapPartitions(iter => iter.map { x => x * x })
+    println("Square of each element of RDD done by MapPartitions: " + squarePartMap.collect().mkString(","))
 
-    /*************************************** Flatmap *****************************************/
+    /** ************************************* Flatmap *****************************************/
     /* Flat map is similar to map, the difference is flatmap will flat the content of the rdd.
     * For example map(line=>line.split(" ") will generate a list1(list11(),list12()) list1 is the
     * list of all lines, list11 is the list of words in line number 1 of all lines
     *
     * flatMap will generate a list1(word1,word2,....) list1 is the list of all words*/
-    val textRDD=spark.sparkContext.parallelize(List("hello world","hi"))
-    val words=textRDD.flatMap(line=>line.split(" "))
+    val textRDD = spark.sparkContext.parallelize(List("hello world", "hi"))
+    val words = textRDD.flatMap(line => line.split(" "))
     println(s"Flat map of words value : ${words.collect().mkString(",")}")
 
-    /******************************************Filter *******************************************/
-   /* The filter method takes a Boolean function as input and applies it to each element in the source
-    * RDD to create a new RDD. The filter method returns a new RDD formed by selecting only those elements
-    * for which the input Boolean function returned true. Thus, the new RDD contains a subset of the elements
-    * in the original RDD*/
-    val logRDD= spark.sparkContext.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/log.log")
-    val errorRDD=logRDD.filter(line=>line.contains("ERROR"))
-    val warnRDD= logRDD.filter(line=>line.contains("WARN"))
+    /** ****************************************Filter *******************************************/
+    /* The filter method takes a Boolean function as input and applies it to each element in the source
+     * RDD to create a new RDD. The filter method returns a new RDD formed by selecting only those elements
+     * for which the input Boolean function returned true. Thus, the new RDD contains a subset of the elements
+     * in the original RDD*/
+    val logRDD = spark.sparkContext.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/log.log")
+    val errorRDD = logRDD.filter(line => line.contains("ERROR"))
+    val warnRDD = logRDD.filter(line => line.contains("WARN"))
 
     println(s"error lines value: ${errorRDD.first()}")
     println(s"warn lines value: ${warnRDD.first()}")
 
-    /******************************** Union, intersection and subtract*******************************/
-    val badLineRDD=errorRDD.union(warnRDD)
-    val num1=spark.sparkContext.parallelize(List(1,2,3))
-    val num2=spark.sparkContext.parallelize(List(3,4,5))
+    /** ****************************** Union, intersection and subtract *******************************/
+    val badLineRDD = errorRDD.union(warnRDD)
+    val num1 = spark.sparkContext.parallelize(List(1, 2, 3))
+    val num2 = spark.sparkContext.parallelize(List(3, 4, 5))
     /* The union method takes an RDD as input and returns a new RDD that contains the union of the elements in
      * the source RDD and the RDD passed to it as an input. C=A.union(B), c in C means c in A or in B*/
-    val numUnion=num1.union(num2)
+    val numUnion = num1.union(num2)
     println(s" The union of two num set is : ${numUnion.collect().mkString(",")}")
     /* The intersection C=A.intersection(B), c in C means c in A and c in B*/
-    val numIntersection=num1.intersection(num2)
+    val numIntersection = num1.intersection(num2)
     println(s" The intersection of two num set is : ${numIntersection.collect().mkString(",")}")
     /* The subtract method takes an RDD as input and returns a new RDD that contains elements in the source
      * RDD but not in the input RDD. C=A.subtract(B), c in C means c in A and c not in B.
       * */
-    val numSubtract=num1.subtract(num2)
+    val numSubtract = num1.subtract(num2)
     println(s" The subtract of two num set is : ${numSubtract.collect().mkString(",")}")
 
-    /*********************************** Cartesian **********************************/
-      /* The cartesian method of an RDD takes an RDD as input and returns an RDD containing the cartesian
-      * product of all the elements in both RDDs. It returns an RDD of ordered pairs, in which the first element
-      * comes from the source RDD and the second element is from the input RDD. The number of elements in the
-      * returned RDD is equal to the product of the source and input RDD lengths.*/
-    val numCartesian=num1.cartesian(num2)
+    /** ********************************* Cartesian **********************************/
+    /* The cartesian method of an RDD takes an RDD as input and returns an RDD containing the cartesian
+    * product of all the elements in both RDDs. It returns an RDD of ordered pairs, in which the first element
+    * comes from the source RDD and the second element is from the input RDD. The number of elements in the
+    * returned RDD is equal to the product of the source and input RDD lengths.*/
+    val numCartesian = num1.cartesian(num2)
 
-    /******************************* zip and zipWithIndex **************************/
+    /** ***************************** zip and zipWithIndex **************************/
     /* The zip method takes an RDD as input and returns an RDD of pairs, where the first element in a pair is
      * from the source RDD and second element is from the input RDD. Unlike the cartesian method, the RDD
      * returned by zip has the same number of elements as the source RDD. Both the source RDD and the input
      * RDD must have the same length. In addition, both RDDs are assumed to have same number of partitions
      * and same number of elements in each partition.*/
 
-    val numbers=spark.sparkContext.parallelize(List(1,2,3,4))
-    val alphabets=spark.sparkContext.parallelize(List("a","b","c","d"))
-    val zipPaires= numbers.zip(alphabets)
+    val numbers = spark.sparkContext.parallelize(List(1, 2, 3, 4))
+    val alphabets = spark.sparkContext.parallelize(List("a", "b", "c", "d"))
+    val zipPaires = numbers.zip(alphabets)
     println(s"zipPaires value is : ${zipPaires.collect().mkString(",")}")
 
     /* The zipWithIndex method zips the elements of the source RDD with their indices and returns an RDD of pairs.*/
-    val alphabetsWithIndex=alphabets.zipWithIndex()
+    val alphabetsWithIndex = alphabets.zipWithIndex()
     println(s"zipPairesWithIndex value is : ${alphabetsWithIndex.collect().mkString(",")}")
 
-   /******************************* groupBy ***********************************/
-  /* groupBy method groups the elements of an RDD according to a user specified criteria. It takes as input a function
-  * that generates a key for each element in the source RDD. It applies this function to all the elements in the source
-  * RDD and returns an RDD of pairs. In each returned pair, the first item is a key and the second item is a collection
-  * of the elements mapped to that key by the input function to the groupBy method.
-  *
-  * Note that the groupBy method is an expensive operation since it may shuffle data.*/
+    /** ***************************** groupBy ***********************************/
+    /* groupBy method groups the elements of an RDD according to a user specified criteria. It takes as input a function
+    * that generates a key for each element in the source RDD. It applies this function to all the elements in the source
+    * RDD and returns an RDD of pairs. In each returned pair, the first item is a key and the second item is a collection
+    * of the elements mapped to that key by the input function to the groupBy method.
+    *
+    * Note that the groupBy method is an expensive operation since it may shuffle data.*/
 
     /*Following rdd is the report of client satisfacation of a company's service*/
 
-   case class client_satisfait(manager_name:String,  client_name:String, client_gender:String, client_age:Int, response_time:Double, statisfaction_level:Double)
-    val client_sat_lines=spark.sparkContext.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/satisfait_client.data")
-    val client_rdd = client_sat_lines.map{ l=> {
-      if(l.isEmpty){println("This is an empty line")}
+    case class client_satisfait(manager_name: String, client_name: String, client_gender: String, client_age: Int, response_time: Double, statisfaction_level: Double)
+    val client_sat_lines = spark.sparkContext.textFile("/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/satisfait_client.data")
+    val client_rdd = client_sat_lines.map { l => {
+      if (l.isEmpty) {
+        println("This is an empty line")
+      }
       else {
-        val s= l.split(",")
-        client_satisfait(s(0),s(1),s(2),s(3).toInt,s(4).toDouble,s(5).toDouble)}
-    }}
-   // println(s"client_rdd type: ${client_rdd.getClass.getName}")
-   // println(s"Sample of client_rdd : ${client_rdd.first()} ")
-    val groupByAge=client_rdd.groupBy(c=>{
-       c match {
-         case client_satisfait(manager_name,client_name,client_gender,client_age,response_time,statisfaction_level) => client_age
-         case _ => 0
-       }
-    })
-
-    //println(s"groupByAge value is : ${groupByAge.collect().mkString(",")}")
-
-/******************************KeyBy *************************************/
-   /* The keyBy method is similar to the groupBy method. It a higher-order method that takes as input a function
-    * that returns a key for any given element in the source RDD. The keyBy method applies this function to all the
-    * elements in the source RDD and returns an RDD of pairs. In each returned pair, the first item is a key which is
-    * calculated by using the input function and the second item is an element that was mapped to that key by the
-    * input function to the keyBy method. The RDD returned by keyBy will have the same number of elements as the
-    * source RDD*/
-
-    val keyByAge=client_rdd.keyBy(c=>{
+        val s = l.split(",")
+        client_satisfait(s(0), s(1), s(2), s(3).toInt, s(4).toDouble, s(5).toDouble)
+      }
+    }
+    }
+    // println(s"client_rdd type: ${client_rdd.getClass.getName}")
+    // println(s"Sample of client_rdd : ${client_rdd.first()} ")
+    val groupByAge = client_rdd.groupBy(c => {
       c match {
-        case client_satisfait(manager_name,client_name,client_gender,client_age,response_time,statisfaction_level) => client_age
+        case client_satisfait(manager_name, client_name, client_gender, client_age, response_time, statisfaction_level) => client_age
         case _ => 0
       }
     })
 
-   // println(s"KeyByAge value is : ${keyByAge.collect().mkString(",")}")
-/****************************************sortBy********************************/
-/* The sortBy method returns an RDD with sorted elements from the source RDD. It takes two input parameters.
- * The first input is a function that generates a key for each element in the source RDD. The second argument
- * allows you to specify ascending or descending order for sort.*/
+    //println(s"groupByAge value is : ${groupByAge.collect().mkString(",")}")
 
-    val unSortedNums=spark.sparkContext.parallelize(List(4,9,1,5,8,3,2))
-    val sortedNums=unSortedNums.sortBy(x=>x,true)
+    /** ****************************KeyBy *************************************/
+    /* The keyBy method is similar to the groupBy method. It a higher-order method that takes as input a function
+     * that returns a key for any given element in the source RDD. The keyBy method applies this function to all the
+     * elements in the source RDD and returns an RDD of pairs. In each returned pair, the first item is a key which is
+     * calculated by using the input function and the second item is an element that was mapped to that key by the
+     * input function to the keyBy method. The RDD returned by keyBy will have the same number of elements as the
+     * source RDD*/
+
+    val keyByAge = client_rdd.keyBy(c => {
+      c match {
+        case client_satisfait(manager_name, client_name, client_gender, client_age, response_time, statisfaction_level) => client_age
+        case _ => 0
+      }
+    })
+
+    // println(s"KeyByAge value is : ${keyByAge.collect().mkString(",")}")
+    /** **************************************sortBy ********************************/
+    /* The sortBy method returns an RDD with sorted elements from the source RDD. It takes two input parameters.
+     * The first input is a function that generates a key for each element in the source RDD. The second argument
+     * allows you to specify ascending or descending order for sort.*/
+
+    val unSortedNums = spark.sparkContext.parallelize(List(4, 9, 1, 5, 8, 3, 2))
+    val sortedNums = unSortedNums.sortBy(x => x, true)
     //println(s"sortedNums value is : ${sortedNums.collect.mkString(",")}")
 
-    val sortByAge=client_rdd.sortBy(c=>{
+    val sortByAge = client_rdd.sortBy(c => {
       c match {
-        case client_satisfait(manager_name,client_name,client_gender,client_age,response_time,statisfaction_level) => client_age
+        case client_satisfait(manager_name, client_name, client_gender, client_age, response_time, statisfaction_level) => client_age
         case _ => 0
       }
     })
     //println(s"client satisfait rdd sortByAge value is : ${sortByAge.collect.mkString("|")} ")
 
-    /********************************** pipe *****************************************************/
+    /** ******************************** pipe *****************************************************/
     /* The pipe method allows you to execute an external program in a forked process. It captures the output of the
     * external program as a String and returns an RDD of Strings.*/
 
-    /******************************** randomSplit ****************************************************/
+    /** ****************************** randomSplit ****************************************************/
     /* The randomSplit method splits the source RDD into an array of RDDs. It takes the weights of the splits as input.*/
-    val numbersTobeSplited=spark.sparkContext.parallelize((1 to 100).toList)
-    val splittedNumbers=numbersTobeSplited.randomSplit(Array(0.8,0.2))
-    val firstSet=splittedNumbers(0)
-    val secondSet=splittedNumbers(1)
+    val numbersTobeSplited = spark.sparkContext.parallelize((1 to 100).toList)
+    val splittedNumbers = numbersTobeSplited.randomSplit(Array(0.8, 0.2))
+    val firstSet = splittedNumbers(0)
+    val secondSet = splittedNumbers(1)
     println(s"FirstSet has ${firstSet.count()}, Second set has ${secondSet.count()}")
 
-    /*********************************coalesce ****************************************/
+    /** *******************************coalesce ****************************************/
     /* The coalesce method reduces the number of partitions in an RDD. It takes an integer input and returns a new RDD
     * with the specified number of partitions. This function is very useful when you want to export your result to
     * normal file system (not HDFS). So you can have all your result in one file not in 100 files. */
-    val allNumsInOnePartitions=numbersTobeSplited.coalesce(1,true)
+    val allNumsInOnePartitions = numbersTobeSplited.coalesce(1, true)
 
-    /********************************repartition *************************************/
+    /** ******************************repartition *************************************/
     /* The repartition method takes an integer as input and returns an RDD with specified number of partitions.
     * It is useful for increasing parallelism. It redistributes data, so it is an expensive operation.
     * The coalesce and repartition methods look similar, but the first one is used for reducing the number
@@ -344,84 +387,84 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     *
     * Note that the repartition has limit, for example, if you have a RDD with 3 element, you can't repartion it to
     * have 4 partitions. And the size of each partition must be smaller than 2GB*/
-    val numsWithSixPartitions=numbersTobeSplited.repartition(6)
+    val numsWithSixPartitions = numbersTobeSplited.repartition(6)
 
-    /******************************* sample ****************************************/
+    /** ***************************** sample ****************************************/
     /* The sample method returns a sampled subset of the source RDD. It takes three input parameters. The first
     * parameter specifies the replacement strategy. The second parameter specifies the ratio of the sample size to
     * source RDD size. The third parameter, which is optional, specifies a random seed for sampling. if the seed is a fixed
     * value, the sample can be reproduced */
-    val seed:Long=0
-    val sampleOfNums=numbersTobeSplited.sample(true,0.2,seed)
+    val seed: Long = 0
+    val sampleOfNums = numbersTobeSplited.sample(true, 0.2, seed)
 
   }
 
 
-  /************************************************************************************************
-    ************************************** 1.3 RDDs operations : Actions **********************
-    * ***************************************************************************************************/
+  /** **********************************************************************************************
+   * ************************************* 1.3 RDDs operations : Actions **********************
+   * ***************************************************************************************************/
 
-/* Actions are RDD methods that return a value to a driver program. Unlike transformations are lazy, Actions will be
-* executed when it appears*/
-  def RddActionOperations(spark:SparkSession):Unit={
+  /* Actions are RDD methods that return a value to a driver program. Unlike transformations are lazy, Actions will be
+  * executed when it appears*/
+  def RddActionOperations(spark: SparkSession): Unit = {
 
-    /************************ RDDs Actions examples**********************/
-    val num1=spark.sparkContext.parallelize(List(1,2,3,3,2,1,5,6,7))
-    val num2=spark.sparkContext.parallelize(List(3,4,5))
+    /** ********************** RDDs Actions examples **********************/
+    val num1 = spark.sparkContext.parallelize(List(1, 2, 3, 3, 2, 1, 5, 6, 7))
+    val num2 = spark.sparkContext.parallelize(List(3, 4, 5))
 
-  /******************************** Collect ****************************************/
-/* The collect method returns the elements in the source RDD as an array. This method should be used with
-* caution since it moves data from all the worker nodes to the driver program. It can crash the driver program
-* if called on a very large RDD.*/
-  val squareNumRdd=num1.map(x=>x*x)
-  val squareNumRes=squareNumRdd.collect()
-  println(s"squareNumRes has type : ${squareNumRes.getClass().getName()}")
-  println(s"squareNumRes has value: ${squareNumRes.mkString(",")}")
+    /** ****************************** Collect ****************************************/
+    /* The collect method returns the elements in the source RDD as an array. This method should be used with
+    * caution since it moves data from all the worker nodes to the driver program. It can crash the driver program
+    * if called on a very large RDD.*/
+    val squareNumRdd = num1.map(x => x * x)
+    val squareNumRes = squareNumRdd.collect()
+    println(s"squareNumRes has type : ${squareNumRes.getClass().getName()}")
+    println(s"squareNumRes has value: ${squareNumRes.mkString(",")}")
 
-  /*************************count and countByValue**********************************/
-  /* The count method returns a count(long type) of the elements in the source RDD.*/
+    /** ***********************count and countByValue **********************************/
+    /* The count method returns a count(long type) of the elements in the source RDD.*/
 
-  val countNum1=num1.count()
-  println(s"countNum1 has type: ${countNum1.getClass.getName}")
-  println(s"countNum1 has value: ${countNum1}")
-  /* The countByValue method returns a count of each unique element in the source RDD. It returns an instance
-   * of the Map class containing each unique element and its count as a key-value pair.*/
+    val countNum1 = num1.count()
+    println(s"countNum1 has type: ${countNum1.getClass.getName}")
+    println(s"countNum1 has value: ${countNum1}")
+    /* The countByValue method returns a count of each unique element in the source RDD. It returns an instance
+     * of the Map class containing each unique element and its count as a key-value pair.*/
 
-  val countByValueNum1=num1.countByValue()
-  println(s"countByValueNum1 has value: ${countByValueNum1.mkString(",")}")
+    val countByValueNum1 = num1.countByValue()
+    println(s"countByValueNum1 has value: ${countByValueNum1.mkString(",")}")
 
-  /********************first, take, takeOrdered, top *******************************/
-  /* The first method returns the first element in the source RDD. */
-  val firstElementOfNum1=num1.first()
-  println(s"firstElementOfNum1 is : ${firstElementOfNum1}")
+    /** ******************first, take, takeOrdered, top *******************************/
+    /* The first method returns the first element in the source RDD. */
+    val firstElementOfNum1 = num1.first()
+    println(s"firstElementOfNum1 is : ${firstElementOfNum1}")
 
-  /* The top method takes an integer N as input and returns an array containing the N largest elements
-  * in the source RDD.*/
+    /* The top method takes an integer N as input and returns an array containing the N largest elements
+    * in the source RDD.*/
 
-  val biggestThreeElementOfNum1=num1.top(3)
-  println(s"BiggestThreeElementOfNum1 has value: ${biggestThreeElementOfNum1.mkString(",")}")
+    val biggestThreeElementOfNum1 = num1.top(3)
+    println(s"BiggestThreeElementOfNum1 has value: ${biggestThreeElementOfNum1.mkString(",")}")
 
-  /* The take method takes an integer N as input and returns an array containing the first N element in the
-   * source RDD.*/
+    /* The take method takes an integer N as input and returns an array containing the first N element in the
+     * source RDD.*/
 
-  val firstThreeElementOfNum1=num1.take(3)
-  println(s"firstThreeElementOfNum1 has value: ${firstThreeElementOfNum1.mkString(",")}")
+    val firstThreeElementOfNum1 = num1.take(3)
+    println(s"firstThreeElementOfNum1 has value: ${firstThreeElementOfNum1.mkString(",")}")
 
-  /* The take method takes an integer N as input and returns an array containing the first N element in the
-   * source RDD.*/
+    /* The take method takes an integer N as input and returns an array containing the first N element in the
+     * source RDD.*/
 
-  val smallestThreeElementOfNum1=num1.takeOrdered(3)
-  println(s"smallestThreeElementOfNum1 has value: ${smallestThreeElementOfNum1.mkString(",")}")
+    val smallestThreeElementOfNum1 = num1.takeOrdered(3)
+    println(s"smallestThreeElementOfNum1 has value: ${smallestThreeElementOfNum1.mkString(",")}")
 
-  /***************************Min, Max **********************************************/
-  /* The min method returns the smallest element in an RDD. The max method returns the largest element in an RDD.
-  * For rdd of strings. It did return a value, but it's not right*/
-  val minNum=num1.min()
-  val maxNum=num1.max()
-  println(s"minNum has value ${minNum}, maxNum has value ${maxNum}")
+    /** *************************Min, Max **********************************************/
+    /* The min method returns the smallest element in an RDD. The max method returns the largest element in an RDD.
+    * For rdd of strings. It did return a value, but it's not right*/
+    val minNum = num1.min()
+    val maxNum = num1.max()
+    println(s"minNum has value ${minNum}, maxNum has value ${maxNum}")
 
 
-    /************************************************* Reduce ******************************/
+    /** *********************************************** Reduce ******************************/
 
     /* The higher-order reduce method aggregates the elements of the source RDD using an associative and
      * commutative binary operator provided to it. It is similar to the fold method; however, it does not require a
@@ -433,18 +476,18 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
      * + is associative and commutative
      * / is neither associative nor commutative
      * */
-    val sumReduce=num1.reduce((x,y)=>x+y)
+    val sumReduce = num1.reduce((x, y) => x + y)
     println(s"Sum of num1 done by reduce: ${sumReduce}")
 
-    /********************************************* fold ***********************************/
+    /** ******************************************* fold ***********************************/
 
-      /* The higher-order fold method aggregates the elements in the source RDD using the specified neutral zero
-       * value and an associative binary operator. It first aggregates the elements in each RDD partition and then
-       * aggregates the results from each partition.
-       *
-       * The neutral zero value depends on the RDD type and the aggregation operation. For example, if you
-       * want to sum all the elements in an RDD of Integers, the neutral zero value should be 0. Instead, if you want
-       * to calculate the products of all the elements in an RDD of Integers, the neutral zero value should be 1.*/
+    /* The higher-order fold method aggregates the elements in the source RDD using the specified neutral zero
+     * value and an associative binary operator. It first aggregates the elements in each RDD partition and then
+     * aggregates the results from each partition.
+     *
+     * The neutral zero value depends on the RDD type and the aggregation operation. For example, if you
+     * want to sum all the elements in an RDD of Integers, the neutral zero value should be 0. Instead, if you want
+     * to calculate the products of all the elements in an RDD of Integers, the neutral zero value should be 1.*/
 
     /*
     *  fold[T](acc:T)((acc,value)=>acc)
@@ -453,17 +496,18 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     *  - value is the elements of RDDs
     *  To start fold we must give a initial acc value which has the same data type as RDD elements.
     * */
-    val maxByFold=num1.fold(0)((acc,num)=>{
-      if(acc<num) num else acc
+    val maxByFold = num1.fold(0)((acc, num) => {
+      if (acc < num) num else acc
     })
     println(s"Max value done by fold ${maxByFold}")
 
-  val productByFold=num1.fold(1)((acc,num)=>{acc*num})
-  println(s"Product value done by fold ${productByFold}")
+    val productByFold = num1.fold(1)((acc, num) => {
+      acc * num
+    })
+    println(s"Product value done by fold ${productByFold}")
 
 
-
-    /***************************************Aggregate **********************************************/
+    /** *************************************Aggregate **********************************************/
     /*
     * The aggregate function frees us from the constraint of having the return be the same type as the RDD which
     * we are working on. With aggregate, like fold, we supply an initial zero value of the type we want to return.
@@ -471,51 +515,51 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     * supply a second function to merge two accumulators, given that each node accumulates its own results locally.
     * */
     /*The last argument 4 means the numbers of partitions of the rdd */
-    val flowers= spark.sparkContext.parallelize(List(11,12,13,24,25,26,35,36,37,24,15,16),4)
+    val flowers = spark.sparkContext.parallelize(List(11, 12, 13, 24, 25, 26, 35, 36, 37, 24, 15, 16), 4)
     //println("Flowers rdd partions number "+flowers.partitions.size)
 
     /*_+_ means sum of the args (x,y)=>x+y */
     /*The fist function calculate with all elements inside the partition(Intra-partition)
     * The second function calculate with the result of the first fonction(Inter-partition) */
-    val flowerSum=flowers.aggregate(0)((x,y)=>x+y,(x,y)=>x+y)
+    val flowerSum = flowers.aggregate(0)((x, y) => x + y, (x, y) => x + y)
     /*If the initial accumulator is not 0, the value will be add in each function*/
-    val simpleFlowerSum=flowers.aggregate(2)(_+_,_+_)
-    println("Sum done by aggregate "+flowerSum)
-    println("Sum done by aggregate "+simpleFlowerSum)
+    val simpleFlowerSum = flowers.aggregate(2)(_ + _, _ + _)
+    println("Sum done by aggregate " + flowerSum)
+    println("Sum done by aggregate " + simpleFlowerSum)
 
   }
 
-  /************************************************************************************************
-    ************************************** 1.4 Saving RDDs  **********************
-    * ***************************************************************************************************/
-  def RddSaveOperation(spark:SparkSession):Unit={
+  /** **********************************************************************************************
+   * ************************************* 1.4 Saving RDDs  **********************
+   * ***************************************************************************************************/
+  def RddSaveOperation(spark: SparkSession): Unit = {
     /* Generally, after data is processed, results are saved on disk. Spark allows an application developer to save
      * an RDD to any Hadoop-supported storage system. An RDD saved to disk can be used by another Spark or
      * MapReduce application.*/
 
-    /**********************************Save as textFile *****************************************/
+    /** ********************************Save as textFile *****************************************/
 
     /* The saveAsTextFile method saves the elements of the source RDD in the specified directory on any
      * Hadoop-supported file system. Each RDD element is converted to its string representation and stored as a
      * line of text*/
 
-    val saveRdd= spark.sparkContext.parallelize(List("orange","apple","banana","peach","kiwi"))
-   /* Here I save it on a local file system. if you want to write to hdfs, you need to change file:// to hdfs://
-   * And if you want to write all result in a signle part file, you need to change the partion of the rdd. Because
-   * for each partion, spark witl write a part file in hdfs. */
+    val saveRdd = spark.sparkContext.parallelize(List("orange", "apple", "banana", "peach", "kiwi"))
+    /* Here I save it on a local file system. if you want to write to hdfs, you need to change file:// to hdfs://
+    * And if you want to write all result in a signle part file, you need to change the partion of the rdd. Because
+    * for each partion, spark witl write a part file in hdfs. */
     saveRdd.saveAsTextFile("file:///tmp/saveRDDTest")
     //change rdd partions to 1 then save it to hdfs
     //saveRdd.coalesce(1).saveAsTextFile("hdfs://path")
 
-    /**************************************Save as objectFile*****************************************/
+    /** ************************************Save as objectFile *****************************************/
     /* The saveAsObjectFile method saves the elements of the source RDD as serialized Java objects in
     * the specified directory. */
     saveRdd.saveAsObjectFile("file:///tmp/saveRDDObjectTest")
 
-    /*************************************Save as sequence file ****************************************/
+    /** ***********************************Save as sequence file ****************************************/
     /* The saveAsSequenceFile method saves an RDD of key-value pairs in SequenceFile format. An RDD of keyvalue
      * pairs can also be saved in text format using the saveAsTextFile */
-    val pairRdd=saveRdd.map(x=>(x,x.contains("a")))
+    val pairRdd = saveRdd.map(x => (x, x.contains("a")))
     //saveRdd.saveAsSequenceFile("Path") does not work, because it's not a pair rdd
     pairRdd.saveAsSequenceFile("file:///tmp/saveRDDSeqTest")
 
@@ -527,9 +571,9 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
 
   }
 
-  /************************************************************************************************
-    ************************************** 1.5 Caching RDDs (Persistence) **********************
-    * *************************************************************************************************/
+  /** **********************************************************************************************
+   * ************************************* 1.5 Caching RDDs (Persistence) **********************
+   * *************************************************************************************************/
 
   /*
   * One of the most important capabilities in Spark is persisting (or caching) a dataset in memory across operations.
@@ -573,10 +617,10 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
   * The cache() method is a shorthand for using the default storage level, which is StorageLevel.MEMORY_ONLY
   * (store deserialized objects in memory).
   * */
-  def RddCachingOperations(spark:SparkSession):Unit={
-    val logPath="/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/log.log"
-    val logs=spark.sparkContext.textFile(logPath)
-    val errorsAndWarnings = logs filter {l=>l.contains("ERROR")||l.contains("WARN")}
+  def RddCachingOperations(spark: SparkSession): Unit = {
+    val logPath = "/home/pliu/data_set/spark_data_set/spark_lessons/Lesson01_RDD/log.log"
+    val logs = spark.sparkContext.textFile(logPath)
+    val errorsAndWarnings = logs filter { l => l.contains("ERROR") || l.contains("WARN") }
     //cache in memory
     errorsAndWarnings.cache()
     // The following code are persist code example
@@ -584,10 +628,10 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     //errorsAndWarnings.persist(StorageLevel.MEMORY_AND_DISK)
     //Store RDD as seriallized java object, it uses less memory, but more cpu intensive to read.
     //errorsAndWarnings.persist(StorageLevel.MEMORY_AND_DISK_SER_2)
-    val errorLogs=errorsAndWarnings.filter(l=>l.contains("ERROR"))
-    val warnLogs=errorsAndWarnings.filter(l=>l.contains("WARN"))
+    val errorLogs = errorsAndWarnings.filter(l => l.contains("ERROR"))
+    val warnLogs = errorsAndWarnings.filter(l => l.contains("WARN"))
     val errorCount = errorLogs.count()
-    val warnCount=warnLogs.count()
+    val warnCount = warnLogs.count()
 
 
     /* Cache Memory Management
@@ -597,10 +641,10 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
   }
 
 
-  /************************************************************************************************
-    ******************* 1.6 Use user define function(udf) in transformation and action******************
-    * *************************************************************************************************/
-  def RddUdfOperations(spark:SparkSession):Unit={
+  /** **********************************************************************************************
+   * ****************** 1.6 Use user define function(udf) in transformation and action******************
+   * *************************************************************************************************/
+  def RddUdfOperations(spark: SparkSession): Unit = {
     /*
    *
     * Spark’s API relies heavily on passing functions in the driver program to run on the cluster. There are two
@@ -609,28 +653,30 @@ val client_sat_lines=sc.textFile("/home/pliu/data_set/spark_data_set/spark_lesso
     *    2. Static methods in a global singleton object.
     *
     * For example, you can define object addTextToLines and method addEat and then use them in a map, as follows: */
-val fruits=spark.sparkContext.parallelize(List("orange","apple","banana","wiki"))
-    val eatFruits=fruits.map(line=>addTextToLines.addEat(line))
+    val fruits = spark.sparkContext.parallelize(List("orange", "apple", "banana", "wiki"))
+    val eatFruits = fruits.map(line => addTextToLines.addEat(line))
     println(s"eatFruits value: ${eatFruits.collect.mkString(",")}")
 
     /* You can also call directly a function define inside the same object*/
-    val throwF=fruits.map(line=>throwFruits(line))
+    val throwF = fruits.map(line => throwFruits(line))
     println(s"throwF value: ${throwF.collect.mkString(",")}")
 
     /*All transformation and actions which take a function as argument can use udf also*/
   }
-  object addTextToLines{
-    def addEat(line:String):String={
-      return "Eat "+line
+
+  object addTextToLines {
+    def addEat(line: String): String = {
+      return "Eat " + line
     }
   }
 
-  def throwFruits(line:String):String={
-    return "Throw "+line
+  def throwFruits(line: String): String = {
+    return "Throw " + line
   }
-/*******************************************************************************************************************
-  * ************************************** Index ******************************************************************
-  * ***********************************************************************************************************/
+
+  /** *****************************************************************************************************************
+   * ************************************** Index ******************************************************************
+   * ***********************************************************************************************************/
 
   /* Index 1
     * RDDs transformation List:
