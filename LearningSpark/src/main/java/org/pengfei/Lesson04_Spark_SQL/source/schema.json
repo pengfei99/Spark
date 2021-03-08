@@ -1,0 +1,34 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "firstName",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "middleName",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "lastName",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "gender",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "salary",
+    "type" : "integer",
+    "nullable" : true,
+    "metadata" : { }
+  } ]
+}
