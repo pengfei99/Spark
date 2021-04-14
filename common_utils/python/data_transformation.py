@@ -2,6 +2,7 @@ import pyspark
 from pyspark.sql import SparkSession
 from pyspark import SparkFiles
 from pyspark.sql.functions import ltrim, rtrim, trim
+import pyspark.sql.functions as f
 
 # This function removes space in a cell of string type.
 # df is the data frame, col_name is the column name
@@ -12,18 +13,18 @@ from pyspark.sql.functions import ltrim, rtrim, trim
 def remove_space(df, col_name, position):
     # remove left side space
     if position == "l":
-        return df.withColumn("tmp", ltrim(col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
+        return df.withColumn("tmp", ltrim(f.col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
     # remove right side space
     elif position == "r":
-        return df.withColumn("tmp", rtrim(col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
+        return df.withColumn("tmp", rtrim(f.col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
     # remove all side space
     elif position == "a":
-        return df.withColumn("tmp", trim(col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
+        return df.withColumn("tmp", trim(f.col(col_name))).drop(col_name).withColumnRenamed("tmp", col_name)
 
 # This function filter a column of a data frame which value is in the value list
 # df is a data frame, col_name is the name of the column, value_list is a list of int
 def filter_pokemon_by_generation(df, col_name, value_list):
-    return df.filter(col(col_name).isin(value_list))
+    return df.filter(f.col(col_name).isin(value_list))
 
 
 def mute_spark_logs(sc):
