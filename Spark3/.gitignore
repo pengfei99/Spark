@@ -1,0 +1,17 @@
+# ignore all logs
+*.log
+
+# ignore all .class
+*.class
+
+# ignore all files under target/
+target/
+
+# ignore all files under spark-warehouse
+spark-warehouse/
+
+# ignore the IDE files
+.idea/
+.idea_modules/
+*.iml
+out/
