@@ -26,6 +26,10 @@ def remove_space(df, col_name, position):
 def filter_pokemon_by_generation(df, col_name, value_list):
     return df.filter(f.col(col_name).isin(value_list))
 
+# This function can extract a file name from a full file path
+# path is the column name where stores the full file path
+def extract_file_name(path):
+    return sql_fun.substring_index(path, "/", -1)
 
 def mute_spark_logs(sc):
     """Mute Spark info logging"""
